@@ -1,14 +1,30 @@
-from scrapers.base import ProductMatch, Scraper, extract_jsonld_products
+from scrapers.base import ProductMatch, Scraper
 
 
 class BiggieScraper(Scraper):
     name = "biggie"
     base_url = "https://www.biggie.com.py"
-    search_path = "/buscar?q={query}"  # ponytail: site is a Next.js SPA — confirm SSR includes JSON-LD, else switch to its internal JSON API before trusting in production
+    # Confirmed live via browser network inspection: the frontend (a Vue SPA,
+    # not server-rendered HTML — no JSON-LD anywhere) calls this JSON API
+    # directly. The search page itself (biggie.com.py/search?q=...) is only
+    # useful as a human-facing reference URL; the real data comes from here.
+    api_url = "https://api.app.biggie.com.py/api/articles"
+    reference_url = "https://www.biggie.com.py/search?q={query}"
 
     def search(self, query: str) -> list[ProductMatch]:
-        url = self.base_url + self.search_path.format(query=query)
-        resp = self.session.get(url, timeout=10)
+        resp = self.session.get(
+            self.api_url,
+            params={"query": query, "take": 24, "skip": 0, "classificationId": 0},
+            timeout=10,
+        )
         resp.raise_for_status()
-        products = extract_jsonld_products(resp.text)
-        return [ProductMatch(p["name"], p["price"], resp.url) for p in products]
+        data = resp.json()
+        reference = self.reference_url.format(query=query)
+
+        results: list[ProductMatch] = []
+        for item in data.get("items", []):
+            price = item["priceSaleOffer"] if item.get("isOnOffer") else item["price"]
+            if price is None:
+                continue
+            results.append(ProductMatch(item["name"], float(price), reference))
+        return results

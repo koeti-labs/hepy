@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": "9FE7035A-DAAF-4D25-75FF-08D914A12DDC",
+      "name": "Arroz Primicia Parborizado Tipo I de 1.000 gr.",
+      "price": 9400,
+      "isOnOffer": true,
+      "priceSaleOffer": 8450
+    },
+    {
+      "id": "AAAA1111-BBBB-2222-CCCC-333344445555",
+      "name": "Arroz Doña Juana 1kg",
+      "price": 7200,
+      "isOnOffer": false,
+      "priceSaleOffer": null
+    }
+  ],
+  "count": 2
+}
