@@ -122,6 +122,35 @@ def extract_nextjs_rsc_products(text: str) -> list[dict]:
     return products
 
 
+def extract_woocommerce_products(html: str, base_url: str) -> list[dict]:
+    """Parse product cards from a plain WooCommerce theme (confirmed live on
+    Grütter's "megashop" theme) — no schema.org Product JSON-LD present, so
+    this parses the standard `.woocommerce-loop-product__title` /
+    `.woocommerce-Price-amount` markup directly.
+
+    Takes the primary `span.price` amount (ignores any bulk-discount price
+    shown separately, e.g. Grütter's "3 o más" tier). Returns
+    [{"name", "price", "url"}, ...]; cards with no parseable price skipped.
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    products: list[dict] = []
+    for card in soup.select("li.product"):
+        title = card.select_one(".woocommerce-loop-product__title")
+        link = card.select_one("a.woocommerce-loop-product__link")
+        price_amount = card.select_one("span.price .woocommerce-Price-amount")
+        if not (title and link and price_amount):
+            continue
+
+        price = parse_py_price(price_amount.get_text())
+        if price is None:
+            continue
+
+        href = link.get("href", "")
+        url = href if href.startswith("http") else base_url.rstrip("/") + "/" + href.lstrip("/")
+        products.append({"name": title.get_text(strip=True), "price": price, "url": url})
+    return products
+
+
 class Scraper:
     name: str = "base"
     base_url: str = ""
