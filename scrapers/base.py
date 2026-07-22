@@ -1,4 +1,5 @@
 import json
+import re
 from dataclasses import dataclass
 
 import requests
@@ -42,6 +43,15 @@ def extract_jsonld_products(html: str) -> list[dict]:
                 except (TypeError, ValueError):
                     continue
     return products
+
+
+def parse_py_price(text: str) -> float | None:
+    """Parse a Paraguayan Guaraní price string (e.g. "Gs. 11.400") into a
+    float (11400.0). Guaraní has no cents; "." is the thousands separator,
+    not a decimal point. Returns None if no digits are found.
+    """
+    digits = re.sub(r"[^\d]", "", text)
+    return float(digits) if digits else None
 
 
 class Scraper:
