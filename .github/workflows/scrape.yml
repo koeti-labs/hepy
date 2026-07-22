@@ -1,0 +1,42 @@
+name: Scrape prices and update dataset
+
+on:
+  schedule:
+    - cron: "0 11 * * *"  # ~08:00 America/Asuncion
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Download existing dataset (if any)
+        run: |
+          gh release download dataset --pattern "prices.db" --dir . --clobber || echo "no existing release yet"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Run daily scrape
+        run: python run_daily.py
+
+      - name: Ensure release exists
+        run: |
+          gh release view dataset || gh release create dataset --title "Hepy dataset" --notes "Auto-updated daily by scrape.yml. Licensed CC BY 4.0 — see LICENSE-DATA."
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Upload updated dataset
+        run: gh release upload dataset prices.db prices.csv prices.json index.json --clobber
+        env:
+          GH_TOKEN: ${{ github.token }}
