@@ -112,16 +112,6 @@
       "is_outlier": 0
     },
     {
-      "id": 538,
-      "date": "2026-07-22",
-      "supermarket": "biggie",
-      "product_key": "jabon_tocador_unidad",
-      "product_name": "Jabon de Tocador Protex aloe x 3 de 90 gr.",
-      "price": 13500.0,
-      "url": "https://www.biggie.com.py/search?q=jabon de tocador",
-      "is_outlier": 0
-    },
-    {
       "id": 537,
       "date": "2026-07-22",
       "supermarket": "biggie",
@@ -239,16 +229,6 @@
       "product_name": "ACEITE DE GIRASOL COSTA DEL SOL X 900ML (12)",
       "price": 15500.0,
       "url": "https://grutteronline.casagrutter.com.py/producto/aceite-de-girasol-costa-del-sol-x-900ml-12/",
-      "is_outlier": 0
-    },
-    {
-      "id": 486,
-      "date": "2026-07-22",
-      "supermarket": "grutter",
-      "product_key": "jabon_tocador_unidad",
-      "product_name": "JABON DE TOCADOR DOVE BLANCO 3X90 GRS (16)",
-      "price": 21750.0,
-      "url": "https://grutteronline.casagrutter.com.py/producto/jabon-de-tocador-dove-blanco-3x90-grs-16/",
       "is_outlier": 0
     },
     {

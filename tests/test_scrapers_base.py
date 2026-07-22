@@ -224,6 +224,22 @@ def test_select_best_match_rejects_cassava_flour_for_raw_mandioca():
     assert select_best_match("Mandioca 1kg", candidates, "alimentacion_hortalizas_y_tuberculos", "mandioca_1kg") is None
 
 
+def test_select_best_match_rejects_a_3x90_multipack_for_one_bar_of_soap():
+    candidates = [ProductMatch(name="JABON DE TOCADOR DOVE BLANCO 3X90 GRS (16)", price=21750.0, url="u")]
+    result = select_best_match(
+        "Jabón de tocador unidad", candidates, "bienes_servicios_diversos_cuidado_personal", "jabon_tocador_unidad",
+    )
+    assert result is None
+
+
+def test_select_best_match_rejects_an_x3_de_90_multipack_for_one_bar_of_soap():
+    candidates = [ProductMatch(name="Jabon de Tocador Protex aloe x 3 de 90 gr.", price=13500.0, url="u")]
+    result = select_best_match(
+        "Jabón de tocador unidad", candidates, "bienes_servicios_diversos_cuidado_personal", "jabon_tocador_unidad",
+    )
+    assert result is None
+
+
 def test_select_best_match_bare_unidad_does_not_force_a_weight_comparison():
     # "Jabón de tocador unidad" is priced per bar, not by weight — real bars
     # describe their weight in grams, a different axis entirely. A bare

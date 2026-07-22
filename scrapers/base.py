@@ -117,6 +117,18 @@ def _extract_quantity(text: str) -> tuple[float, str] | None:
     return None
 
 
+# A pack of N units ("3X90 GRS", "x 3 de 90 gr") prices the whole bundle, not
+# one unit — confirmed live: a 3-bar jabón pack recorded as if it were a
+# single bar, inflating the per-unit price ~3x. None of the basket's
+# canonical items are themselves multipacks, so this is rejected outright
+# regardless of category.
+_MULTIPACK_RE = re.compile(r"\d+\s*x\s*\d+|x\s*\d+\s*de\s*\d+")
+
+
+def _is_multipack(text: str) -> bool:
+    return bool(_MULTIPACK_RE.search(_normalize(text)))
+
+
 def select_best_match(
     canonical_name: str,
     candidates: list[ProductMatch],
@@ -148,6 +160,8 @@ def select_best_match(
     for candidate in candidates:
         cand_tokens = _tokenize(candidate.name)
         if not canon_tokens.issubset(cand_tokens):
+            continue
+        if _is_multipack(candidate.name) and not _is_multipack(canonical_name):
             continue
         # A candidate in a completely different pack size isn't the same
         # product for price-comparison purposes — confirmed live: "Aceite de
