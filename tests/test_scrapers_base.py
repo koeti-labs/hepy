@@ -219,6 +219,11 @@ def test_select_best_match_accepts_a_dozen_eggs_written_as_12un():
     assert result.url == "good"
 
 
+def test_select_best_match_rejects_cassava_flour_for_raw_mandioca():
+    candidates = [ProductMatch(name="HARINA DE MANDIOCA CODIPSA X1KG", price=21400.0, url="u")]
+    assert select_best_match("Mandioca 1kg", candidates, "alimentacion_hortalizas_y_tuberculos", "mandioca_1kg") is None
+
+
 def test_select_best_match_bare_unidad_does_not_force_a_weight_comparison():
     # "Jabón de tocador unidad" is priced per bar, not by weight — real bars
     # describe their weight in grams, a different axis entirely. A bare

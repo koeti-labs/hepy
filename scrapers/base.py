@@ -56,6 +56,9 @@ _PROCESSED_INDICATOR_WORDS = {
     "macerada", "vinagre", "peine", "fideo", "fideos",
     # Fourth pass: a flavoring extract, not the fruit itself.
     "esencia",
+    # Fifth pass: flour milled from a raw root, not the root itself
+    # ("harina de mandioca" matched for canonical "Mandioca 1kg").
+    "harina",
 }
 
 

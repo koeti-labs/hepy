@@ -502,16 +502,6 @@
       "is_outlier": 0
     },
     {
-      "id": 529,
-      "date": "2026-07-22",
-      "supermarket": "salemma",
-      "product_key": "mandioca_1kg",
-      "product_name": "HARINA DE MANDIOCA CODIPSA X1KG",
-      "price": 21400.0,
-      "url": "https://www.salemmaonline.com.py/producto/harina-de-mandioca-x-1-kg",
-      "is_outlier": 0
-    },
-    {
       "id": 533,
       "date": "2026-07-22",
       "supermarket": "salemma",
