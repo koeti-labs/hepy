@@ -54,6 +54,48 @@ def parse_py_price(text: str) -> float | None:
     return float(digits) if digits else None
 
 
+def extract_ecommercepro_products(html: str, base_url: str) -> list[dict]:
+    """Parse product cards from the "EcommercePro" WooCommerce theme, shared
+    by several Paraguayan supermarket sites (Casa Rica, Areté, Los Jardines
+    confirmed live) — none of which emit schema.org Product JSON-LD, so this
+    is the real extraction path for that theme.
+
+    Handles both card shapes seen live: a sale price inside <ins> with the
+    original crossed out in <del>, and a plain single price with an empty
+    <ins> placeholder. Returns [{"name", "price", "url"}, ...]; cards with no
+    parseable price are skipped.
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    products: list[dict] = []
+    for card in soup.select("div.product"):
+        title = card.select_one(".ecommercepro-loop-product__title")
+        link = card.select_one("a.ecommercepro-LoopProduct-link")
+        price_container = card.select_one("span.price")
+        if not (title and link and price_container):
+            continue
+
+        price = None
+        ins_amount = price_container.select_one("ins .amount")
+        if ins_amount and ins_amount.get_text(strip=True):
+            price = parse_py_price(ins_amount.get_text())
+        else:
+            for amount in price_container.select(".amount"):
+                if amount.find_parent("del"):
+                    continue
+                text = amount.get_text(strip=True)
+                if text:
+                    price = parse_py_price(text)
+                    break
+
+        if price is None:
+            continue
+
+        href = link.get("href", "")
+        url = href if href.startswith("http") else base_url.rstrip("/") + "/" + href.lstrip("/")
+        products.append({"name": title.get_text(strip=True), "price": price, "url": url})
+    return products
+
+
 class Scraper:
     name: str = "base"
     base_url: str = ""

@@ -8,11 +8,13 @@ def test_search_parses_fixture(monkeypatch):
 
     class FakeResponse:
         text = fixture_html
-        url = "https://www.casarica.com.py/busqueda?q=arroz"
+        url = "https://www.casarica.com.py/productos?q=arroz&post_type=product"
         def raise_for_status(self):
             pass
 
     monkeypatch.setattr(scraper.session, "get", lambda *a, **k: FakeResponse())
     results = scraper.search("arroz")
     assert len(results) == 1
-    assert results[0].price == 7100.0
+    assert results[0].price == 14000.0
+    assert results[0].name == "ARROZ DON ARROZ INTEGRAL 1KG"
+    assert results[0].url == "https://www.casarica.com.py/arroz-don-arroz-integral-1kg-p23506"
