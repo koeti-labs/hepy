@@ -1,0 +1,478 @@
+[
+  {
+    "product_key": "arroz_1kg",
+    "nombre_canonico": "Arroz blanco 1kg",
+    "bcp_category": "alimentacion_cereales_y_derivados",
+    "weight": 0.0612,
+    "queries": {
+      "superseis": "arroz 1kg",
+      "stock": "arroz 1kg",
+      "casa_rica": "arroz 1kg",
+      "salemma": "arroz 1kg",
+      "biggie": "arroz 1kg",
+      "arete": "arroz 1kg",
+      "grutter": "arroz 1kg",
+      "los_jardines": "arroz 1kg",
+      "real": "arroz 1kg"
+    }
+  },
+  {
+    "product_key": "pan_frances_1kg",
+    "nombre_canonico": "Pan francés 1kg",
+    "bcp_category": "alimentacion_cereales_y_derivados",
+    "weight": 0.0561,
+    "queries": {
+      "superseis": "pan frances 1kg",
+      "stock": "pan frances 1kg",
+      "casa_rica": "pan frances 1kg",
+      "salemma": "pan frances 1kg",
+      "biggie": "pan frances 1kg",
+      "arete": "pan frances 1kg",
+      "grutter": "pan frances 1kg",
+      "los_jardines": "pan frances 1kg",
+      "real": "pan frances 1kg"
+    }
+  },
+  {
+    "product_key": "carne_vacuna_nalga_1kg",
+    "nombre_canonico": "Carne vacuna (nalga) 1kg",
+    "bcp_category": "alimentacion_carnes",
+    "weight": 0.0918,
+    "queries": {
+      "superseis": "carne nalga 1kg",
+      "stock": "carne nalga 1kg",
+      "casa_rica": "carne nalga 1kg",
+      "salemma": "carne nalga 1kg",
+      "biggie": "carne nalga 1kg",
+      "arete": "carne nalga 1kg",
+      "grutter": "carne nalga 1kg",
+      "los_jardines": "carne nalga 1kg",
+      "real": "carne nalga 1kg"
+    }
+  },
+  {
+    "product_key": "pollo_entero_1kg",
+    "nombre_canonico": "Pollo entero 1kg",
+    "bcp_category": "alimentacion_carnes",
+    "weight": 0.0714,
+    "queries": {
+      "superseis": "pollo entero 1kg",
+      "stock": "pollo entero 1kg",
+      "casa_rica": "pollo entero 1kg",
+      "salemma": "pollo entero 1kg",
+      "biggie": "pollo entero 1kg",
+      "arete": "pollo entero 1kg",
+      "grutter": "pollo entero 1kg",
+      "los_jardines": "pollo entero 1kg",
+      "real": "pollo entero 1kg"
+    }
+  },
+  {
+    "product_key": "yerba_mate_1kg",
+    "nombre_canonico": "Yerba mate 1kg",
+    "bcp_category": "alimentacion_bebidas_no_alcoholicas",
+    "weight": 0.0663,
+    "queries": {
+      "superseis": "yerba mate 1kg",
+      "stock": "yerba mate 1kg",
+      "casa_rica": "yerba mate 1kg",
+      "salemma": "yerba mate 1kg",
+      "biggie": "yerba mate 1kg",
+      "arete": "yerba mate 1kg",
+      "grutter": "yerba mate 1kg",
+      "los_jardines": "yerba mate 1kg",
+      "real": "yerba mate 1kg"
+    }
+  },
+  {
+    "product_key": "leche_fluida_1l",
+    "nombre_canonico": "Leche fluida entera 1L",
+    "bcp_category": "alimentacion_lacteos_y_huevos",
+    "weight": 0.0612,
+    "queries": {
+      "superseis": "leche entera 1 litro",
+      "stock": "leche entera 1 litro",
+      "casa_rica": "leche entera 1 litro",
+      "salemma": "leche entera 1 litro",
+      "biggie": "leche entera 1 litro",
+      "arete": "leche entera 1 litro",
+      "grutter": "leche entera 1 litro",
+      "los_jardines": "leche entera 1 litro",
+      "real": "leche entera 1 litro"
+    }
+  },
+  {
+    "product_key": "huevos_docena",
+    "nombre_canonico": "Huevos docena",
+    "bcp_category": "alimentacion_lacteos_y_huevos",
+    "weight": 0.0459,
+    "queries": {
+      "superseis": "huevos docena",
+      "stock": "huevos docena",
+      "casa_rica": "huevos docena",
+      "salemma": "huevos docena",
+      "biggie": "huevos docena",
+      "arete": "huevos docena",
+      "grutter": "huevos docena",
+      "los_jardines": "huevos docena",
+      "real": "huevos docena"
+    }
+  },
+  {
+    "product_key": "aceite_girasol_900ml",
+    "nombre_canonico": "Aceite de girasol 900ml",
+    "bcp_category": "alimentacion_aceites_y_grasas",
+    "weight": 0.0408,
+    "queries": {
+      "superseis": "aceite girasol 900ml",
+      "stock": "aceite girasol 900ml",
+      "casa_rica": "aceite girasol 900ml",
+      "salemma": "aceite girasol 900ml",
+      "biggie": "aceite girasol 900ml",
+      "arete": "aceite girasol 900ml",
+      "grutter": "aceite girasol 900ml",
+      "los_jardines": "aceite girasol 900ml",
+      "real": "aceite girasol 900ml"
+    }
+  },
+  {
+    "product_key": "azucar_1kg",
+    "nombre_canonico": "Azúcar 1kg",
+    "bcp_category": "alimentacion_azucares_y_dulces",
+    "weight": 0.0357,
+    "queries": {
+      "superseis": "azucar 1kg",
+      "stock": "azucar 1kg",
+      "casa_rica": "azucar 1kg",
+      "salemma": "azucar 1kg",
+      "biggie": "azucar 1kg",
+      "arete": "azucar 1kg",
+      "grutter": "azucar 1kg",
+      "los_jardines": "azucar 1kg",
+      "real": "azucar 1kg"
+    }
+  },
+  {
+    "product_key": "harina_trigo_1kg",
+    "nombre_canonico": "Harina de trigo 1kg",
+    "bcp_category": "alimentacion_cereales_y_derivados",
+    "weight": 0.0306,
+    "queries": {
+      "superseis": "harina de trigo 1kg",
+      "stock": "harina de trigo 1kg",
+      "casa_rica": "harina de trigo 1kg",
+      "salemma": "harina de trigo 1kg",
+      "biggie": "harina de trigo 1kg",
+      "arete": "harina de trigo 1kg",
+      "grutter": "harina de trigo 1kg",
+      "los_jardines": "harina de trigo 1kg",
+      "real": "harina de trigo 1kg"
+    }
+  },
+  {
+    "product_key": "fideos_500g",
+    "nombre_canonico": "Fideos secos 500g",
+    "bcp_category": "alimentacion_cereales_y_derivados",
+    "weight": 0.0306,
+    "queries": {
+      "superseis": "fideos 500g",
+      "stock": "fideos 500g",
+      "casa_rica": "fideos 500g",
+      "salemma": "fideos 500g",
+      "biggie": "fideos 500g",
+      "arete": "fideos 500g",
+      "grutter": "fideos 500g",
+      "los_jardines": "fideos 500g",
+      "real": "fideos 500g"
+    }
+  },
+  {
+    "product_key": "papa_1kg",
+    "nombre_canonico": "Papa 1kg",
+    "bcp_category": "alimentacion_hortalizas_y_tuberculos",
+    "weight": 0.0357,
+    "queries": {
+      "superseis": "papa 1kg",
+      "stock": "papa 1kg",
+      "casa_rica": "papa 1kg",
+      "salemma": "papa 1kg",
+      "biggie": "papa 1kg",
+      "arete": "papa 1kg",
+      "grutter": "papa 1kg",
+      "los_jardines": "papa 1kg",
+      "real": "papa 1kg"
+    }
+  },
+  {
+    "product_key": "tomate_1kg",
+    "nombre_canonico": "Tomate 1kg",
+    "bcp_category": "alimentacion_hortalizas_y_tuberculos",
+    "weight": 0.0306,
+    "queries": {
+      "superseis": "tomate 1kg",
+      "stock": "tomate 1kg",
+      "casa_rica": "tomate 1kg",
+      "salemma": "tomate 1kg",
+      "biggie": "tomate 1kg",
+      "arete": "tomate 1kg",
+      "grutter": "tomate 1kg",
+      "los_jardines": "tomate 1kg",
+      "real": "tomate 1kg"
+    }
+  },
+  {
+    "product_key": "cebolla_1kg",
+    "nombre_canonico": "Cebolla 1kg",
+    "bcp_category": "alimentacion_hortalizas_y_tuberculos",
+    "weight": 0.0255,
+    "queries": {
+      "superseis": "cebolla 1kg",
+      "stock": "cebolla 1kg",
+      "casa_rica": "cebolla 1kg",
+      "salemma": "cebolla 1kg",
+      "biggie": "cebolla 1kg",
+      "arete": "cebolla 1kg",
+      "grutter": "cebolla 1kg",
+      "los_jardines": "cebolla 1kg",
+      "real": "cebolla 1kg"
+    }
+  },
+  {
+    "product_key": "banana_1kg",
+    "nombre_canonico": "Banana 1kg",
+    "bcp_category": "alimentacion_frutas",
+    "weight": 0.0255,
+    "queries": {
+      "superseis": "banana 1kg",
+      "stock": "banana 1kg",
+      "casa_rica": "banana 1kg",
+      "salemma": "banana 1kg",
+      "biggie": "banana 1kg",
+      "arete": "banana 1kg",
+      "grutter": "banana 1kg",
+      "los_jardines": "banana 1kg",
+      "real": "banana 1kg"
+    }
+  },
+  {
+    "product_key": "naranja_1kg",
+    "nombre_canonico": "Naranja 1kg",
+    "bcp_category": "alimentacion_frutas",
+    "weight": 0.0204,
+    "queries": {
+      "superseis": "naranja 1kg",
+      "stock": "naranja 1kg",
+      "casa_rica": "naranja 1kg",
+      "salemma": "naranja 1kg",
+      "biggie": "naranja 1kg",
+      "arete": "naranja 1kg",
+      "grutter": "naranja 1kg",
+      "los_jardines": "naranja 1kg",
+      "real": "naranja 1kg"
+    }
+  },
+  {
+    "product_key": "mandioca_1kg",
+    "nombre_canonico": "Mandioca 1kg",
+    "bcp_category": "alimentacion_hortalizas_y_tuberculos",
+    "weight": 0.0306,
+    "queries": {
+      "superseis": "mandioca 1kg",
+      "stock": "mandioca 1kg",
+      "casa_rica": "mandioca 1kg",
+      "salemma": "mandioca 1kg",
+      "biggie": "mandioca 1kg",
+      "arete": "mandioca 1kg",
+      "grutter": "mandioca 1kg",
+      "los_jardines": "mandioca 1kg",
+      "real": "mandioca 1kg"
+    }
+  },
+  {
+    "product_key": "queso_paraguay_1kg",
+    "nombre_canonico": "Queso Paraguay 1kg",
+    "bcp_category": "alimentacion_lacteos_y_huevos",
+    "weight": 0.0408,
+    "queries": {
+      "superseis": "queso paraguay 1kg",
+      "stock": "queso paraguay 1kg",
+      "casa_rica": "queso paraguay 1kg",
+      "salemma": "queso paraguay 1kg",
+      "biggie": "queso paraguay 1kg",
+      "arete": "queso paraguay 1kg",
+      "grutter": "queso paraguay 1kg",
+      "los_jardines": "queso paraguay 1kg",
+      "real": "queso paraguay 1kg"
+    }
+  },
+  {
+    "product_key": "porotos_500g",
+    "nombre_canonico": "Porotos secos 500g",
+    "bcp_category": "alimentacion_legumbres",
+    "weight": 0.0204,
+    "queries": {
+      "superseis": "porotos 500g",
+      "stock": "porotos 500g",
+      "casa_rica": "porotos 500g",
+      "salemma": "porotos 500g",
+      "biggie": "porotos 500g",
+      "arete": "porotos 500g",
+      "grutter": "porotos 500g",
+      "los_jardines": "porotos 500g",
+      "real": "porotos 500g"
+    }
+  },
+  {
+    "product_key": "sal_fina_1kg",
+    "nombre_canonico": "Sal fina 1kg",
+    "bcp_category": "alimentacion_condimentos",
+    "weight": 0.0153,
+    "queries": {
+      "superseis": "sal fina 1kg",
+      "stock": "sal fina 1kg",
+      "casa_rica": "sal fina 1kg",
+      "salemma": "sal fina 1kg",
+      "biggie": "sal fina 1kg",
+      "arete": "sal fina 1kg",
+      "grutter": "sal fina 1kg",
+      "los_jardines": "sal fina 1kg",
+      "real": "sal fina 1kg"
+    }
+  },
+  {
+    "product_key": "cafe_molido_500g",
+    "nombre_canonico": "Café molido 500g",
+    "bcp_category": "alimentacion_bebidas_no_alcoholicas",
+    "weight": 0.0255,
+    "queries": {
+      "superseis": "cafe molido 500g",
+      "stock": "cafe molido 500g",
+      "casa_rica": "cafe molido 500g",
+      "salemma": "cafe molido 500g",
+      "biggie": "cafe molido 500g",
+      "arete": "cafe molido 500g",
+      "grutter": "cafe molido 500g",
+      "los_jardines": "cafe molido 500g",
+      "real": "cafe molido 500g"
+    }
+  },
+  {
+    "product_key": "galletitas_dulces_paquete",
+    "nombre_canonico": "Galletitas dulces paquete",
+    "bcp_category": "alimentacion_otros_productos",
+    "weight": 0.0204,
+    "queries": {
+      "superseis": "galletitas dulces",
+      "stock": "galletitas dulces",
+      "casa_rica": "galletitas dulces",
+      "salemma": "galletitas dulces",
+      "biggie": "galletitas dulces",
+      "arete": "galletitas dulces",
+      "grutter": "galletitas dulces",
+      "los_jardines": "galletitas dulces",
+      "real": "galletitas dulces"
+    }
+  },
+  {
+    "product_key": "yogur_bebible_1l",
+    "nombre_canonico": "Yogur bebible 1L",
+    "bcp_category": "alimentacion_lacteos_y_huevos",
+    "weight": 0.0255,
+    "queries": {
+      "superseis": "yogur bebible 1 litro",
+      "stock": "yogur bebible 1 litro",
+      "casa_rica": "yogur bebible 1 litro",
+      "salemma": "yogur bebible 1 litro",
+      "biggie": "yogur bebible 1 litro",
+      "arete": "yogur bebible 1 litro",
+      "grutter": "yogur bebible 1 litro",
+      "los_jardines": "yogur bebible 1 litro",
+      "real": "yogur bebible 1 litro"
+    }
+  },
+  {
+    "product_key": "jabon_tocador_unidad",
+    "nombre_canonico": "Jabón de tocador unidad",
+    "bcp_category": "bienes_servicios_diversos_cuidado_personal",
+    "weight": 0.0153,
+    "queries": {
+      "superseis": "jabon de tocador",
+      "stock": "jabon de tocador",
+      "casa_rica": "jabon de tocador",
+      "salemma": "jabon de tocador",
+      "biggie": "jabon de tocador",
+      "arete": "jabon de tocador",
+      "grutter": "jabon de tocador",
+      "los_jardines": "jabon de tocador",
+      "real": "jabon de tocador"
+    }
+  },
+  {
+    "product_key": "detergente_lavavajilla_750ml",
+    "nombre_canonico": "Detergente lavavajilla 750ml",
+    "bcp_category": "muebles_articulos_hogar_limpieza",
+    "weight": 0.0204,
+    "queries": {
+      "superseis": "detergente lavavajilla 750ml",
+      "stock": "detergente lavavajilla 750ml",
+      "casa_rica": "detergente lavavajilla 750ml",
+      "salemma": "detergente lavavajilla 750ml",
+      "biggie": "detergente lavavajilla 750ml",
+      "arete": "detergente lavavajilla 750ml",
+      "grutter": "detergente lavavajilla 750ml",
+      "los_jardines": "detergente lavavajilla 750ml",
+      "real": "detergente lavavajilla 750ml"
+    }
+  },
+  {
+    "product_key": "papel_higienico_4rollos",
+    "nombre_canonico": "Papel higiénico paquete 4 rollos",
+    "bcp_category": "bienes_servicios_diversos_cuidado_personal",
+    "weight": 0.0255,
+    "queries": {
+      "superseis": "papel higienico 4 rollos",
+      "stock": "papel higienico 4 rollos",
+      "casa_rica": "papel higienico 4 rollos",
+      "salemma": "papel higienico 4 rollos",
+      "biggie": "papel higienico 4 rollos",
+      "arete": "papel higienico 4 rollos",
+      "grutter": "papel higienico 4 rollos",
+      "los_jardines": "papel higienico 4 rollos",
+      "real": "papel higienico 4 rollos"
+    }
+  },
+  {
+    "product_key": "pasta_dental_90g",
+    "nombre_canonico": "Pasta dental 90g",
+    "bcp_category": "bienes_servicios_diversos_cuidado_personal",
+    "weight": 0.0153,
+    "queries": {
+      "superseis": "pasta dental 90g",
+      "stock": "pasta dental 90g",
+      "casa_rica": "pasta dental 90g",
+      "salemma": "pasta dental 90g",
+      "biggie": "pasta dental 90g",
+      "arete": "pasta dental 90g",
+      "grutter": "pasta dental 90g",
+      "los_jardines": "pasta dental 90g",
+      "real": "pasta dental 90g"
+    }
+  },
+  {
+    "product_key": "lavandina_1l",
+    "nombre_canonico": "Lavandina 1L",
+    "bcp_category": "muebles_articulos_hogar_limpieza",
+    "weight": 0.0157,
+    "queries": {
+      "superseis": "lavandina 1 litro",
+      "stock": "lavandina 1 litro",
+      "casa_rica": "lavandina 1 litro",
+      "salemma": "lavandina 1 litro",
+      "biggie": "lavandina 1 litro",
+      "arete": "lavandina 1 litro",
+      "grutter": "lavandina 1 litro",
+      "los_jardines": "lavandina 1 litro",
+      "real": "lavandina 1 litro"
+    }
+  }
+]
