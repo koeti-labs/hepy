@@ -72,6 +72,11 @@
           </div>
         </li>
       </ol>
+      <p class="section-caption">Así se reparte el peso entre los 28 productos de la canasta — arroz y carne pesan varias veces más que la sal o los condimentos.</p>
+      <div class="chart-panel">
+        <canvas id="canasta-chart" height="220"></canvas>
+        <div class="legend" id="canasta-legend"></div>
+      </div>
     </section>
 
     <section class="reveal">
@@ -98,6 +103,22 @@
       <h2 class="section-title">Puesto por puesto</h2>
       <p class="section-caption">Cada tarjeta es un supermercado. Hoy cubrimos 7 de 9 relevados (2 todavía bloqueados técnicamente — el detalle está en <a href="https://github.com/gsmkev/hepy/blob/main/legal/revision_tos.md">la revisión legal</a>).</p>
       <div class="puestos" id="puestos"></div>
+    </section>
+
+    <section id="rango-precios" class="reveal">
+      <h2 class="section-title">¿Dónde está más barato hoy?</h2>
+      <p class="section-caption" id="range-caption">Cargando…</p>
+      <div class="chart-panel">
+        <canvas id="range-chart" height="220"></canvas>
+      </div>
+    </section>
+
+    <section id="cobertura" class="reveal">
+      <h2 class="section-title">Cobertura de hoy</h2>
+      <p class="section-caption">De los 28 productos de la canasta, cuántos encontramos en cada supermercado. Un puesto con baja cobertura no está mal medido — simplemente su búsqueda no encontró todavía algunos productos.</p>
+      <div class="chart-panel">
+        <canvas id="coverage-chart" height="180"></canvas>
+      </div>
     </section>
 
     <section id="comparar" class="reveal">

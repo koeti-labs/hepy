@@ -5,6 +5,8 @@ const RAW_MAIN_BASE = "https://raw.githubusercontent.com/gsmkev/hepy/main";
 // the repo (via the CI workflow, dashboard/data/index.json) and read from
 // here instead, which does send CORS headers.
 const INDEX_JSON_URL = `${RAW_MAIN_BASE}/dashboard/data/index.json`;
+const LATEST_PRICES_URL = `${RAW_MAIN_BASE}/dashboard/data/latest_prices.json`;
+const BASKET_URL = `${RAW_MAIN_BASE}/basket.json`;
 const IPC_OFICIAL_URL = `${RAW_MAIN_BASE}/ipc_oficial.json`;
 
 const PALETTE = {
@@ -27,6 +29,16 @@ async function loadIndexData() {
 async function loadIpcOficial() {
   try {
     const res = await fetch(IPC_OFICIAL_URL);
+    if (!res.ok) return null;
+    return res.json();
+  } catch {
+    return null;
+  }
+}
+
+async function loadJsonOrNull(url) {
+  try {
+    const res = await fetch(url);
     if (!res.ok) return null;
     return res.json();
   } catch {
@@ -225,6 +237,187 @@ function pearson(xs, ys) {
   return num / (denX * denY);
 }
 
+const CATEGORY_COLORS = ["#f2c14e", "#6fcf97", "#e4572e", "#7ec8e3", "#c792ea", "#f28c6a", "#8bd3c7", "#e07a5f", "#9fb3a6", "#e0c568", "#77b6a8", "#d97d7d", "#7a9edb"];
+
+function categoryLabel(bcpCategory) {
+  return bcpCategory.replace(/^alimentacion_/, "").replace(/_/g, " ");
+}
+
+async function renderCanastaChart() {
+  const canvas = document.getElementById("canasta-chart");
+  const legendEl = document.getElementById("canasta-legend");
+  const basket = await loadJsonOrNull(BASKET_URL);
+
+  if (!basket) {
+    canvas.replaceWith(Object.assign(document.createElement("p"), {
+      className: "board-empty",
+      textContent: "No se pudo cargar la canasta.",
+    }));
+    return;
+  }
+
+  const categories = [...new Set(basket.map(i => i.bcp_category))];
+  const colorFor = (cat) => CATEGORY_COLORS[categories.indexOf(cat) % CATEGORY_COLORS.length];
+
+  const sorted = [...basket].sort((a, b) => b.weight - a.weight);
+
+  new Chart(canvas, {
+    type: "bar",
+    data: {
+      labels: sorted.map(i => i.nombre_canonico),
+      datasets: [{
+        data: sorted.map(i => +(i.weight * 100).toFixed(2)),
+        backgroundColor: sorted.map(i => colorFor(i.bcp_category)),
+      }],
+    },
+    options: {
+      indexAxis: "y",
+      parsing: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: (ctx) => `${ctx.parsed.x}% del índice`,
+          },
+        },
+      },
+      scales: {
+        x: { title: { display: true, text: "% de peso en el índice" } },
+      },
+    },
+  });
+
+  for (const cat of categories) {
+    const item = document.createElement("span");
+    item.className = "legend-item";
+    const swatch = document.createElement("span");
+    swatch.className = "legend-swatch";
+    swatch.style.background = colorFor(cat);
+    item.append(swatch, document.createTextNode(categoryLabel(cat)));
+    legendEl.appendChild(item);
+  }
+}
+
+async function renderPriceRangeChart() {
+  const canvas = document.getElementById("range-chart");
+  const captionEl = document.getElementById("range-caption");
+  const snapshot = await loadJsonOrNull(LATEST_PRICES_URL);
+
+  if (!snapshot || !snapshot.prices || snapshot.prices.length === 0) {
+    canvas.replaceWith(Object.assign(document.createElement("p"), {
+      className: "board-empty",
+      textContent: "Todavía no hay precios de hoy para comparar.",
+    }));
+    return;
+  }
+
+  const byProduct = new Map();
+  for (const row of snapshot.prices) {
+    if (!byProduct.has(row.product_key)) byProduct.set(row.product_key, []);
+    byProduct.get(row.product_key).push(row);
+  }
+
+  const ranged = [...byProduct.values()]
+    .filter(rows => rows.length >= 2)
+    .map(rows => {
+      const sorted = [...rows].sort((a, b) => a.price - b.price);
+      const min = sorted[0];
+      const max = sorted[sorted.length - 1];
+      return { name: min.product_name, minRow: min, maxRow: max, spread: max.price / min.price };
+    })
+    .sort((a, b) => b.spread - a.spread)
+    .slice(0, 12);
+
+  if (ranged.length === 0) {
+    canvas.replaceWith(Object.assign(document.createElement("p"), {
+      className: "board-empty",
+      textContent: "Ningún producto tiene precio en 2 o más supermercados todavía.",
+    }));
+    return;
+  }
+
+  captionEl.textContent = `Comparando los ${ranged.length} productos con mayor diferencia de precio entre supermercados hoy, sobre ${byProduct.size} con al menos 2 ofertas.`;
+
+  new Chart(canvas, {
+    type: "bar",
+    data: {
+      labels: ranged.map(r => r.name),
+      datasets: [{
+        data: ranged.map(r => [r.minRow.price, r.maxRow.price]),
+        backgroundColor: PALETTE.hepy + "55",
+        borderColor: PALETTE.hepy,
+        borderWidth: 1,
+      }],
+    },
+    options: {
+      indexAxis: "y",
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: (ctx) => {
+              const r = ranged[ctx.dataIndex];
+              return [
+                `Más barato: ₲ ${r.minRow.price.toLocaleString("es-PY")} (${r.minRow.supermarket.replace(/_/g, " ")})`,
+                `Más caro: ₲ ${r.maxRow.price.toLocaleString("es-PY")} (${r.maxRow.supermarket.replace(/_/g, " ")})`,
+              ];
+            },
+          },
+        },
+      },
+      scales: {
+        x: { title: { display: true, text: "Precio (₲)" } },
+      },
+    },
+  });
+}
+
+async function renderCoverageChart(indexDaily, supermarkets) {
+  const canvas = document.getElementById("coverage-chart");
+  const snapshot = await loadJsonOrNull(LATEST_PRICES_URL);
+  const basket = await loadJsonOrNull(BASKET_URL);
+
+  if (!snapshot || !basket || supermarkets.length === 0) {
+    canvas.replaceWith(Object.assign(document.createElement("p"), {
+      className: "board-empty",
+      textContent: "Todavía no hay datos de cobertura.",
+    }));
+    return;
+  }
+
+  const total = basket.length;
+  const counts = supermarkets.map(sm => snapshot.prices.filter(r => r.supermarket === sm).length);
+  const order = supermarkets
+    .map((sm, i) => ({ sm, matched: counts[i] }))
+    .sort((a, b) => b.matched - a.matched);
+
+  new Chart(canvas, {
+    type: "bar",
+    data: {
+      labels: order.map(o => o.sm.replace(/_/g, " ")),
+      datasets: [
+        {
+          label: "Encontrado",
+          data: order.map(o => o.matched),
+          backgroundColor: PALETTE.hepy,
+        },
+        {
+          label: "No encontrado",
+          data: order.map(o => total - o.matched),
+          backgroundColor: PALETTE.panelLine,
+        },
+      ],
+    },
+    options: {
+      indexAxis: "y",
+      scales: {
+        x: { stacked: true, max: total, title: { display: true, text: `de ${total} productos` } },
+        y: { stacked: true },
+      },
+    },
+  });
+}
+
 function renderDownloads() {
   const downloads = document.getElementById("downloads");
   for (const [fname, label] of [["prices.db", "SQLite"], ["prices.csv", "CSV"], ["prices.json", "JSON (precios)"], ["index.json", "JSON (índice)"]]) {
@@ -265,7 +458,10 @@ async function main() {
 
   renderBoard(aggregate);
   renderAggregateChart(aggregate);
+  renderCanastaChart();
   renderPuestos(indexDaily, supermarkets);
+  renderPriceRangeChart();
+  renderCoverageChart(indexDaily, supermarkets);
   renderCompareChart(indexDaily, supermarkets);
   renderIpcPanel(aggregate);
   renderDownloads();

@@ -66,6 +66,25 @@ def export_json_csv(conn, prices_json_path: str, prices_csv_path: str, index_jso
         json.dump({"index_daily": index_rows}, f, ensure_ascii=False, indent=2)
 
 
+def export_latest_prices_snapshot(conn, path: str) -> None:
+    """Write a small snapshot of only the most recent date's prices — bounded
+    size forever (unlike prices.json, which grows with the full history), so
+    it's safe to commit to git for the dashboard's price-dispersion chart to
+    read directly (GitHub Release assets don't send CORS headers; committed
+    files served via raw.githubusercontent.com do).
+    """
+    rows = db.read_prices(conn)
+    if not rows:
+        latest_date = None
+        snapshot = []
+    else:
+        latest_date = max(r["date"] for r in rows)
+        snapshot = [r for r in rows if r["date"] == latest_date and not r["is_outlier"]]
+
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump({"date": latest_date, "prices": snapshot}, f, ensure_ascii=False, indent=2)
+
+
 if __name__ == "__main__":
     import datetime
 
@@ -96,3 +115,4 @@ if __name__ == "__main__":
 
     index.compute_aggregate_index(conn, basket_data, [s.name for s in all_scrapers])
     export_json_csv(conn, "prices.json", "prices.csv", "index.json")
+    export_latest_prices_snapshot(conn, "latest_prices.json")

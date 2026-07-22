@@ -37,21 +37,22 @@ jobs:
           GH_TOKEN: ${{ github.token }}
 
       - name: Upload updated dataset
-        run: gh release upload dataset prices.db prices.csv prices.json index.json --clobber
+        run: gh release upload dataset prices.db prices.csv prices.json index.json latest_prices.json --clobber
         env:
           GH_TOKEN: ${{ github.token }}
 
-      - name: Publish index.json for the dashboard (CORS workaround)
+      - name: Publish small snapshots for the dashboard (CORS workaround)
         # GitHub Release assets don't send CORS headers, so the dashboard
-        # can't fetch() index.json directly from the release — only <a
-        # href> downloads work there. Committing this one small aggregate
-        # file (not the full price dataset) lets the dashboard read it via
-        # jsDelivr's GitHub mirror, which does send CORS headers.
+        # can't fetch() them directly from the release — only <a href>
+        # downloads work there. Committing these two small, bounded-size
+        # snapshots (not the full price dataset) lets the dashboard read
+        # them via raw.githubusercontent.com, which does send CORS headers.
         run: |
           mkdir -p dashboard/data
           cp index.json dashboard/data/index.json
+          cp latest_prices.json dashboard/data/latest_prices.json
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add dashboard/data/index.json
-          git diff --cached --quiet || git commit -m "chore: update dashboard index.json snapshot"
+          git add dashboard/data/index.json dashboard/data/latest_prices.json
+          git diff --cached --quiet || git commit -m "chore: update dashboard data snapshots"
           git push
