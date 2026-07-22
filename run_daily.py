@@ -16,34 +16,49 @@ def run(conn, basket: list[dict], scrapers: list[Scraper], date: str) -> dict:
     failed_supermarkets: list[str] = []
 
     for scraper in scrapers:
-        try:
-            for item in basket:
-                query = item["queries"].get(scraper.name, item["nombre_canonico"])
-                matches = scraper.search(query)
-                best = select_best_match(
-                    item["nombre_canonico"], matches, item.get("bcp_category"), item["product_key"],
-                )
-                if best is None:
-                    missing += 1
-                    log.info("no plausible match for %s on %s", item["product_key"], scraper.name)
-                    # Clears any stale row from an earlier same-day run that
-                    # had (wrongly) recorded a match here before a matching
-                    # fix landed — otherwise it would silently linger.
-                    db.delete_price(conn, date, scraper.name, item["product_key"])
-                    continue
+        had_error = False
 
-                history = [
-                    r["price"]
-                    for r in db.read_prices(conn, product_key=item["product_key"], supermarket=scraper.name)
-                ]
-                flagged = outliers.is_outlier(history, best.price)
-                db.insert_price(
-                    conn, date, scraper.name, item["product_key"], best.name, best.price, best.url,
-                    is_outlier=flagged,
-                )
-                inserted += 1
-        except Exception as exc:  # a whole supermarket failing must not abort the run
-            log.warning("supermarket %s failed: %s", scraper.name, exc)
+        for item in basket:
+            query = item["queries"].get(scraper.name, item["nombre_canonico"])
+            try:
+                matches = scraper.search(query)
+            except Exception as exc:
+                # A single item's request failing (timeout, connection
+                # reset, etc.) must not abort the rest of this scraper's
+                # basket — confirmed live: Grütter timing out on item 6 of
+                # 28 previously left items 7-28 completely unattempted for
+                # the whole run, silently leaving their prices however many
+                # days stale. Any existing row for this item is left
+                # untouched (a transient error is not proof the item is
+                # actually gone), unlike a confirmed "no match" below.
+                log.warning("search failed for %s on %s: %s", item["product_key"], scraper.name, exc)
+                had_error = True
+                continue
+
+            best = select_best_match(
+                item["nombre_canonico"], matches, item.get("bcp_category"), item["product_key"],
+            )
+            if best is None:
+                missing += 1
+                log.info("no plausible match for %s on %s", item["product_key"], scraper.name)
+                # Clears any stale row from an earlier same-day run that
+                # had (wrongly) recorded a match here before a matching
+                # fix landed — otherwise it would silently linger.
+                db.delete_price(conn, date, scraper.name, item["product_key"])
+                continue
+
+            history = [
+                r["price"]
+                for r in db.read_prices(conn, product_key=item["product_key"], supermarket=scraper.name)
+            ]
+            flagged = outliers.is_outlier(history, best.price)
+            db.insert_price(
+                conn, date, scraper.name, item["product_key"], best.name, best.price, best.url,
+                is_outlier=flagged,
+            )
+            inserted += 1
+
+        if had_error:
             failed_supermarkets.append(scraper.name)
 
     return {"inserted": inserted, "missing": missing, "failed_supermarkets": failed_supermarkets}

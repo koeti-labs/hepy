@@ -36,6 +36,63 @@ def test_run_daily_inserts_and_survives_one_site_failing(tmp_path):
     assert rows[0]["price"] == 6500.0
 
 
+def test_run_daily_recovers_after_one_item_fails_mid_basket():
+    # Regression test for a real bug: a scraper timing out on one item used
+    # to abort every remaining item in its basket for that scraper (the
+    # try/except wrapped the whole per-scraper loop). Confirmed live:
+    # Grütter timed out on item 6 of 28, and items 7-28 were silently never
+    # attempted for that entire run.
+    two_item_basket = [
+        {"product_key": "arroz", "nombre_canonico": "Arroz", "bcp_category": "cereales",
+         "weight": 0.5, "queries": {"flaky": "arroz"}},
+        {"product_key": "aceite", "nombre_canonico": "Aceite", "bcp_category": "aceites",
+         "weight": 0.5, "queries": {"flaky": "aceite"}},
+    ]
+
+    class FlakyOnFirstItemScraper(Scraper):
+        name = "flaky"
+        calls = 0
+
+        def search(self, query):
+            self.calls += 1
+            if self.calls == 1:
+                raise TimeoutError("read timed out")
+            return [ProductMatch(name="Aceite", price=12000.0, url="https://flaky/p/2")]
+
+    conn = db.connect(":memory:")
+    db.init_schema(conn)
+    scraper = FlakyOnFirstItemScraper()
+
+    summary = run_daily.run(conn, two_item_basket, [scraper], date="2026-07-22")
+
+    assert scraper.calls == 2  # both items were attempted, not just the first
+    assert summary["failed_supermarkets"] == ["flaky"]
+    rows = db.read_prices(conn, product_key="aceite", supermarket="flaky")
+    assert len(rows) == 1
+    assert rows[0]["price"] == 12000.0
+    # The failed item leaves no row at all (not a false "no match" delete,
+    # not a fabricated insert) — its prior state, if any, is untouched.
+    assert db.read_prices(conn, product_key="arroz", supermarket="flaky") == []
+
+
+def test_run_daily_leaves_existing_row_untouched_when_search_errors(tmp_path):
+    conn = db.connect(str(tmp_path / "t.db"))
+    db.init_schema(conn)
+    db.insert_price(conn, "2026-07-22", "flaky", "arroz", "Arroz (de ayer)", 6400.0, "https://flaky/p/old")
+
+    class AlwaysFailsScraper(Scraper):
+        name = "flaky"
+
+        def search(self, query):
+            raise TimeoutError("read timed out")
+
+    run_daily.run(conn, BASKET, [AlwaysFailsScraper()], date="2026-07-22")
+
+    rows = db.read_prices(conn, product_key="arroz", supermarket="flaky")
+    assert len(rows) == 1
+    assert rows[0]["price"] == 6400.0  # untouched, not deleted and not overwritten
+
+
 class NoMatchScraper(Scraper):
     name = "good"
 
