@@ -27,47 +27,48 @@
 
     <section class="reveal intro">
       <p class="lede">
-        El <strong>IPC oficial</strong> del Banco Central sale una vez al mes y mide la
-        inflación de todo el país. <strong>Hepy</strong> mide una porción más chica —los
-        supermercados online de Paraguay— pero lo hace <strong>todos los días</strong>,
-        con datos públicos y verificables por cualquiera.
+        ¿Sentís que en el súper todo está cada vez más caro, pero tenés que esperar hasta
+        fin de mes para que el Gobierno confirme si tenías razón? <strong>Hepy no espera.</strong>
+        Miramos los precios reales, todos los días, y te mostramos qué está pasando con la
+        plata de tu changuito.
       </p>
       <p class="lede-sub">
-        Cada madrugada, un scraper visita 9 supermercados, junta el precio de ~28 productos
-        de la canasta básica, descarta lecturas anómalas y arma un índice ponderado con la
-        misma metodología del IPC-BCP. El resultado se publica acá, abierto, todos los días.
+        Elegimos ~28 productos que están en casi todas las casas —arroz, aceite, fideos,
+        carne, productos de limpieza— y los seguimos en 9 supermercados online de Paraguay.
+        Todo lo que hacemos es público: el código, los datos y las cuentas están abiertos
+        para que cualquiera los revise.
       </p>
     </section>
 
     <section id="como-funciona" class="reveal">
-      <h2 class="section-title">Cómo funciona</h2>
+      <h2 class="section-title">Cómo lo hacemos</h2>
       <ol class="steps">
         <li class="step">
           <span class="step-mark">I</span>
           <div>
-            <p class="step-title">Scrapea</p>
-            <p class="step-body">Todas las madrugadas, un robot busca ~28 productos en 9 supermercados online paraguayos.</p>
+            <p class="step-title">Miramos los precios</p>
+            <p class="step-body">Todas las madrugadas, un robot visita 9 supermercados online y anota el precio de esos ~28 productos.</p>
           </div>
         </li>
         <li class="step">
           <span class="step-mark">II</span>
           <div>
-            <p class="step-title">Limpia</p>
-            <p class="step-body">Cualquier precio que se dispare o se hunda de forma sospechosa (típico de un error de scraping) se descarta antes de entrar al cálculo.</p>
+            <p class="step-title">Descartamos los raros</p>
+            <p class="step-body">Si un precio se dispara o se hunde de golpe (típico de un error al leer la página), lo sacamos antes de que ensucie la cuenta.</p>
           </div>
         </li>
         <li class="step">
           <span class="step-mark">III</span>
           <div>
-            <p class="step-title">Pondera</p>
-            <p class="step-body">Cada producto pesa lo mismo que pesa en el IPC-BCP oficial — arroz y carne mueven más la aguja que la sal.</p>
+            <p class="step-title">Sacamos el promedio, con criterio</p>
+            <p class="step-body">No todos los productos pesan igual: el arroz y la carne mueven más la aguja que la sal, igual que en el cálculo oficial del Gobierno.</p>
           </div>
         </li>
         <li class="step">
           <span class="step-mark">IIII</span>
           <div>
-            <p class="step-title">Publica</p>
-            <p class="step-body">El índice del día, el detalle por supermercado y el dataset crudo quedan abiertos acá mismo.</p>
+            <p class="step-title">Lo publicamos, gratis</p>
+            <p class="step-body">El número del día, el detalle por supermercado y la base de datos completa quedan disponibles acá mismo, para quien los quiera usar.</p>
           </div>
         </li>
       </ol>
@@ -109,12 +110,13 @@
     </section>
 
     <section id="ipc" class="reveal">
-      <h2 class="section-title">¿Hepy sigue al IPC oficial?</h2>
+      <h2 class="section-title">¿Hepy realmente sirve para algo?</h2>
       <div class="ipc-panel">
-        <p>Esa es la pregunta que importa. Si Hepy se mueve en la misma dirección que el
-        IPC-BCP, es evidencia de que un scraping diario de supermercados puede anticipar
-        la inflación oficial antes de que el BCP la publique. Por eso corremos esta
-        comparación en cada actualización, en vez de mostrarla una sola vez.</p>
+        <p>Esa es la pregunta que importa: si lo que medimos acá se parece a lo que el
+        Banco Central termina publicando un mes después, quiere decir que Hepy puede
+        avisar hacia dónde va la inflación antes de que sea oficial. Por eso hacemos esta
+        comparación cada vez que actualizamos el índice, en vez de mostrarla una sola vez
+        y listo.</p>
         <p class="ipc-status" id="ipc-status">Cargando…</p>
         <p class="ipc-source" id="ipc-source"></p>
       </div>
@@ -122,8 +124,76 @@
 
     <section id="dataset" class="reveal">
       <h2 class="section-title">Datos abiertos</h2>
-      <p class="section-caption">Código y dataset públicos para que cualquier periodista, investigador o curioso pueda auditar los números — nada de caja negra. Licencia CC BY 4.0 — citar como "Hepy — Koeti Labs (<span id="cc-year"></span>), &lt;URL del dataset&gt;".</p>
+      <p class="section-caption">Código y dataset públicos para que cualquier periodista, investigador o curioso pueda revisar los números — nada de caja negra. Licencia CC BY 4.0 — citar como "Hepy — Koeti Labs (<span id="cc-year"></span>), &lt;URL del dataset&gt;".</p>
       <ul class="downloads" id="downloads"></ul>
+    </section>
+
+    <section id="tecnico" class="reveal">
+      <details class="technical">
+        <summary>
+          <h2 class="section-title inline">Ficha técnica — para quien quiera el detalle riguroso</h2>
+          <p class="section-caption">Metodología estadística, detección de outliers y el plan de modelos de pronóstico. No hace falta leer esto para entender Hepy — es para quien quiera auditar exactamente cómo se calcula.</p>
+        </summary>
+
+        <div class="technical-body">
+          <article>
+            <h3>Índice: media geométrica ponderada (Jevons)</h3>
+            <p>Para cada supermercado, el índice del día se calcula como el índice del día
+            anterior multiplicado por el cambio agregado de precios, donde el cambio de
+            cada producto se pesa según su categoría en la canasta oficial del IPC-BCP:</p>
+            <pre class="formula">cambio = exp( Σ w_i · ln(precio_i,hoy / precio_i,ayer) / Σ w_i )</pre>
+            <p>El índice agregado nacional es el promedio simple del índice de cada
+            supermercado con datos ese día. Todos arrancan en 100 el primer día que
+            aparecen en el histórico.</p>
+          </article>
+
+          <article>
+            <h3>Detección de precios atípicos (MAD)</h3>
+            <p>Antes de entrar al cálculo, cada precio nuevo se compara contra el
+            historial de ese mismo producto en ese mismo supermercado usando un
+            z-score robusto basado en la <em>desviación absoluta mediana</em> (MAD)
+            del logaritmo de precios — el mismo tipo de técnica de higiene de datos que
+            usan las oficinas de estadística nacionales:</p>
+            <pre class="formula">z = 0.6745 · (ln(precio) − mediana) / MAD</pre>
+            <p>Un precio se descarta si |z| supera 3.5, o directamente si es cero o
+            negativo (señal casi segura de un error de lectura, no de un precio real).</p>
+          </article>
+
+          <article>
+            <h3>Validación contra el IPC-BCP oficial</h3>
+            <p>Corremos una correlación de Pearson entre la serie de Hepy y la serie
+            oficial, probando cada posible rezago entre -30 y +30 días, y nos quedamos
+            con el rezago que maximiza la correlación en valor absoluto. El resultado
+            se muestra tal cual en la sección de arriba, incluso cuando todavía no hay
+            suficiente historia para que signifique algo.</p>
+          </article>
+
+          <article>
+            <h3>Fase 2 (en desarrollo): nowcasting con modelos de series de tiempo</h3>
+            <p>El objetivo de largo plazo es poder anticipar el IPC-BCP oficial antes de
+            que se publique, usando la serie diaria de Hepy como insumo. El plan de
+            modelos, en orden de complejidad creciente:</p>
+            <ul>
+              <li><strong>Ridge / Lasso</strong> — línea base lineal e interpretable sobre
+              rezagos del índice (features de 1, 7 y 30 días).</li>
+              <li><strong>Gradient Boosting (XGBoost / LightGBM)</strong> — el modelo
+              principal; domina la literatura reciente de nowcasting de inflación en
+              economías en desarrollo.</li>
+              <li><strong>SARIMAX</strong> — benchmark econométrico clásico, obligatorio
+              para poder afirmar con rigor cuánto mejora el modelo de ML por encima de
+              un método estadístico tradicional.</li>
+            </ul>
+            <p>Estos modelos <strong>todavía no están entrenados</strong> — el código de
+            features ya existe (<code>forecasting/</code> en el repositorio), pero
+            entrenar en serio requiere 6-12 meses de historia diaria acumulada y una
+            validación walk-forward, no una simple partición train/test. Publicar un
+            modelo entrenado con una semana de datos sería más ruido que señal.</p>
+          </article>
+
+          <p class="technical-footer">Código completo, tests y metodología legal
+          (revisión de robots.txt/ToS por sitio): <a href="https://github.com/gsmkev/hepy">github.com/gsmkev/hepy</a>.</p>
+        </div>
+      </details>
     </section>
 
     <footer class="site-footer">

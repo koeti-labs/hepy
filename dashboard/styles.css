@@ -417,6 +417,110 @@ h2.section-title {
   color: var(--accent);
 }
 
+/* Technical appendix (collapsed by default) */
+
+.technical {
+  background: var(--panel);
+  border: 1px dashed var(--panel-line);
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+}
+
+.technical summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.technical summary::-webkit-details-marker {
+  display: none;
+}
+
+.technical summary::before {
+  content: "▸ ";
+  color: var(--accent);
+  font-family: var(--mono);
+}
+
+.technical[open] summary::before {
+  content: "▾ ";
+}
+
+.section-title.inline {
+  display: inline;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.technical summary .section-caption {
+  margin: 0.5rem 0 0;
+}
+
+.technical-body {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--panel-line);
+}
+
+.technical-body article {
+  margin-bottom: 1.5rem;
+}
+
+.technical-body article:last-of-type {
+  margin-bottom: 0;
+}
+
+.technical-body h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  color: var(--accent);
+}
+
+.technical-body p {
+  margin: 0 0 0.6rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  max-width: 68ch;
+}
+
+.technical-body ul {
+  margin: 0 0 0.6rem;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.technical-body li {
+  margin-bottom: 0.4rem;
+}
+
+.technical-body strong {
+  color: var(--ink);
+}
+
+.technical-body code {
+  font-family: var(--mono);
+  background: var(--bg);
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  font-size: 0.85em;
+}
+
+.formula {
+  font-family: var(--mono);
+  background: var(--bg);
+  border: 1px solid var(--panel-line);
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  margin: 0 0 0.6rem;
+  font-size: 0.85rem;
+  overflow-x: auto;
+  color: var(--ink);
+}
+
+.technical-footer {
+  font-size: 0.85rem;
+}
+
 footer.site-footer {
   margin-top: 3rem;
   padding-top: 1.5rem;
