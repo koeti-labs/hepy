@@ -228,12 +228,35 @@ function pearson(xs, ys) {
 function renderDownloads() {
   const downloads = document.getElementById("downloads");
   for (const [fname, label] of [["prices.db", "SQLite"], ["prices.csv", "CSV"], ["prices.json", "JSON (precios)"], ["index.json", "JSON (índice)"]]) {
-    downloads.insertAdjacentHTML("beforeend", `<li><a href="${DATASET_RELEASE_BASE}/${fname}">${label}</a></li>`);
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = `${DATASET_RELEASE_BASE}/${fname}`;
+    a.textContent = label;
+    li.appendChild(a);
+    downloads.appendChild(li);
   }
   document.getElementById("cc-year").textContent = new Date().getFullYear();
 }
 
+function initScrollReveal() {
+  const sections = document.querySelectorAll(".reveal");
+  if (!("IntersectionObserver" in window)) {
+    sections.forEach(el => el.classList.add("is-visible"));
+    return;
+  }
+  const observer = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    }
+  }, { threshold: 0.15 });
+  sections.forEach(el => observer.observe(el));
+}
+
 async function main() {
+  initScrollReveal();
   chartDefaults();
   const data = await loadIndexData();
   const indexDaily = data.index_daily || [];

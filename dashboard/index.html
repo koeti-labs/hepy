@@ -15,58 +15,114 @@
     <header class="site-header">
       <div>
         <h1 class="wordmark">Hep<span class="peso">₲</span></h1>
-        <p class="tagline">Índice de precios de alta frecuencia para Paraguay, construido con scraping diario de supermercados online.</p>
+        <p class="tagline">El precio real de la canasta, medido todos los días — no una vez al mes.</p>
       </div>
       <nav class="site-nav">
-        <a href="https://github.com/gsmkev/hepy">Código</a>
-        <a href="#dataset">Dataset</a>
+        <a href="#como-funciona">Cómo funciona</a>
         <a href="#ipc">Vs. IPC-BCP</a>
+        <a href="#dataset">Dataset</a>
+        <a href="https://github.com/gsmkev/hepy">Código</a>
       </nav>
     </header>
 
-    <div class="board" id="board">
-      <p class="board-eyebrow">Índice agregado — hoy</p>
-      <div class="board-figure">
-        <span class="board-number" id="board-number">—</span>
-        <span class="board-delta" id="board-delta"></span>
-      </div>
-      <p class="board-date" id="board-date"></p>
-    </div>
+    <section class="reveal intro">
+      <p class="lede">
+        El <strong>IPC oficial</strong> del Banco Central sale una vez al mes y mide la
+        inflación de todo el país. <strong>Hepy</strong> mide una porción más chica —los
+        supermercados online de Paraguay— pero lo hace <strong>todos los días</strong>,
+        con datos públicos y verificables por cualquiera.
+      </p>
+      <p class="lede-sub">
+        Cada madrugada, un scraper visita 9 supermercados, junta el precio de ~28 productos
+        de la canasta básica, descarta lecturas anómalas y arma un índice ponderado con la
+        misma metodología del IPC-BCP. El resultado se publica acá, abierto, todos los días.
+      </p>
+    </section>
 
-    <section id="evolucion">
+    <section id="como-funciona" class="reveal">
+      <h2 class="section-title">Cómo funciona</h2>
+      <ol class="steps">
+        <li class="step">
+          <span class="step-mark">I</span>
+          <div>
+            <p class="step-title">Scrapea</p>
+            <p class="step-body">Todas las madrugadas, un robot busca ~28 productos en 9 supermercados online paraguayos.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-mark">II</span>
+          <div>
+            <p class="step-title">Limpia</p>
+            <p class="step-body">Cualquier precio que se dispare o se hunda de forma sospechosa (típico de un error de scraping) se descarta antes de entrar al cálculo.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-mark">III</span>
+          <div>
+            <p class="step-title">Pondera</p>
+            <p class="step-body">Cada producto pesa lo mismo que pesa en el IPC-BCP oficial — arroz y carne mueven más la aguja que la sal.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="step-mark">IIII</span>
+          <div>
+            <p class="step-title">Publica</p>
+            <p class="step-body">El índice del día, el detalle por supermercado y el dataset crudo quedan abiertos acá mismo.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="reveal">
+      <div class="board" id="board">
+        <p class="board-eyebrow">Índice agregado — hoy</p>
+        <div class="board-figure">
+          <span class="board-number" id="board-number">—</span>
+          <span class="board-delta" id="board-delta"></span>
+        </div>
+        <p class="board-date" id="board-date"></p>
+        <p class="board-caption">Base 100 el primer día que un supermercado entra al índice. Un valor de 100.0 en varios supermercados a la vez no es un error — es que hoy es su primer día contado.</p>
+      </div>
+    </section>
+
+    <section id="evolucion" class="reveal">
       <h2 class="section-title">Evolución del índice</h2>
+      <p class="section-caption">Esta línea es el pulso de precios de Hepy, día a día. Con una sola jornada de historia todavía se ve plana — va a empezar a moverse a partir de mañana.</p>
       <div class="chart-panel">
         <canvas id="aggregate-chart" height="90"></canvas>
       </div>
     </section>
 
-    <section id="por-supermercado">
-      <h2 class="section-title">Por supermercado</h2>
+    <section id="por-supermercado" class="reveal">
+      <h2 class="section-title">Puesto por puesto</h2>
+      <p class="section-caption">Cada tarjeta es un supermercado. Hoy cubrimos 7 de 9 relevados (2 todavía bloqueados técnicamente — el detalle está en <a href="https://github.com/gsmkev/hepy/blob/main/legal/revision_tos.md">la revisión legal</a>).</p>
       <div class="puestos" id="puestos"></div>
     </section>
 
-    <section id="comparar">
+    <section id="comparar" class="reveal">
       <h2 class="section-title">Comparar supermercados</h2>
+      <p class="section-caption">Tildá o destildá cadenas para ver quién sube o baja más rápido que el resto.</p>
       <div class="chart-panel">
         <div class="compare-controls" id="compare-controls"></div>
         <canvas id="compare-chart" height="100"></canvas>
       </div>
     </section>
 
-    <section id="ipc">
-      <h2 class="section-title">Hepy vs. IPC oficial (BCP)</h2>
+    <section id="ipc" class="reveal">
+      <h2 class="section-title">¿Hepy sigue al IPC oficial?</h2>
       <div class="ipc-panel">
-        <p>Validación empírica: correlación entre el índice Hepy y el Índice de Precios al
-        Consumidor oficial del Banco Central del Paraguay, con el rezago (en días) que
-        maximiza la correlación.</p>
+        <p>Esa es la pregunta que importa. Si Hepy se mueve en la misma dirección que el
+        IPC-BCP, es evidencia de que un scraping diario de supermercados puede anticipar
+        la inflación oficial antes de que el BCP la publique. Por eso corremos esta
+        comparación en cada actualización, en vez de mostrarla una sola vez.</p>
         <p class="ipc-status" id="ipc-status">Cargando…</p>
         <p class="ipc-source" id="ipc-source"></p>
       </div>
     </section>
 
-    <section id="dataset">
-      <h2 class="section-title">Descargar dataset</h2>
-      <p class="tagline">Licencia CC BY 4.0 — citar como "Hepy — Koeti Labs (<span id="cc-year"></span>), &lt;URL del dataset&gt;".</p>
+    <section id="dataset" class="reveal">
+      <h2 class="section-title">Datos abiertos</h2>
+      <p class="section-caption">Código y dataset públicos para que cualquier periodista, investigador o curioso pueda auditar los números — nada de caja negra. Licencia CC BY 4.0 — citar como "Hepy — Koeti Labs (<span id="cc-year"></span>), &lt;URL del dataset&gt;".</p>
       <ul class="downloads" id="downloads"></ul>
     </section>
 

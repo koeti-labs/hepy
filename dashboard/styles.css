@@ -100,10 +100,122 @@ nav.site-nav a:hover {
   border-bottom-color: var(--accent);
 }
 
+/* Intro / lede */
+
+.intro {
+  margin-top: 2.5rem;
+}
+
+.lede {
+  margin: 0 0 0.9rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  max-width: 62ch;
+}
+
+.lede strong {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.lede-sub {
+  margin: 0;
+  max-width: 62ch;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+/* Cómo funciona: process steps */
+
+.steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+
+.step {
+  display: flex;
+  gap: 0.9rem;
+}
+
+.step-mark {
+  flex: none;
+  font-family: var(--mono);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--accent);
+  border: 1px solid var(--panel-line);
+  border-radius: 4px;
+  width: 2.25rem;
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-title {
+  margin: 0 0 0.25rem;
+  font-weight: 700;
+}
+
+.step-body {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+/* Section captions */
+
+.section-caption {
+  margin: -0.5rem 0 1rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  max-width: 62ch;
+}
+
+.section-caption a {
+  color: var(--muted);
+  text-decoration-color: var(--panel-line);
+}
+
+.section-caption a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
+.board-caption {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  max-width: 60ch;
+}
+
+/* Scroll reveal */
+
+.reveal {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /* Hero: the board */
 
 .board {
-  margin-top: 2.5rem;
   padding: 2rem;
   background: var(--panel);
   border: 1px solid var(--panel-line);
