@@ -2,7 +2,7 @@
   "date": "2026-07-22",
   "prices": [
     {
-      "id": 287,
+      "id": 380,
       "date": "2026-07-22",
       "supermarket": "arete",
       "product_key": "aceite_girasol_900ml",
@@ -12,7 +12,7 @@
       "is_outlier": 0
     },
     {
-      "id": 284,
+      "id": 377,
       "date": "2026-07-22",
       "supermarket": "arete",
       "product_key": "arroz_1kg",
@@ -22,7 +22,7 @@
       "is_outlier": 0
     },
     {
-      "id": 288,
+      "id": 381,
       "date": "2026-07-22",
       "supermarket": "arete",
       "product_key": "azucar_1kg",
@@ -32,7 +32,7 @@
       "is_outlier": 0
     },
     {
-      "id": 292,
+      "id": 385,
       "date": "2026-07-22",
       "supermarket": "arete",
       "product_key": "banana_1kg",
@@ -42,7 +42,7 @@
       "is_outlier": 0
     },
     {
-      "id": 297,
+      "id": 390,
       "date": "2026-07-22",
       "supermarket": "arete",
       "product_key": "cafe_molido_500g",
@@ -52,17 +52,7 @@
       "is_outlier": 0
     },
     {
-      "id": 171,
-      "date": "2026-07-22",
-      "supermarket": "arete",
-      "product_key": "carne_vacuna_nalga_1kg",
-      "product_name": "CARNE BOVINA ODERICH ENLATADA(CONICA) 320GR",
-      "price": 18900.0,
-      "url": "https://www.arete.com.py/carne-bovina-oderich-enlatada-conica-320gr-p112796",
-      "is_outlier": 0
-    },
-    {
-      "id": 291,
+      "id": 384,
       "date": "2026-07-22",
       "supermarket": "arete",
       "product_key": "cebolla_1kg",
@@ -72,7 +62,7 @@
       "is_outlier": 0
     },
     {
-      "id": 299,
+      "id": 392,
       "date": "2026-07-22",
       "supermarket": "arete",
       "product_key": "detergente_lavavajilla_750ml",
@@ -82,37 +72,7 @@
       "is_outlier": 0
     },
     {
-      "id": 179,
-      "date": "2026-07-22",
-      "supermarket": "arete",
-      "product_key": "fideos_500g",
-      "product_name": "FIDEO ANTONIO AMATO SPAGHETTI N°5 A.A 500GR",
-      "price": 17400.0,
-      "url": "https://www.arete.com.py/fideo-antonio-amato-spaghetti-n-5-aa-500gr-p213963",
-      "is_outlier": 0
-    },
-    {
-      "id": 190,
-      "date": "2026-07-22",
-      "supermarket": "arete",
-      "product_key": "galletitas_dulces_paquete",
-      "product_name": "GALLETITAS ARROZEN DE ARROZ REDONDITAS DULCES 50GR",
-      "price": 10000.0,
-      "url": "https://www.arete.com.py/galletitas-arrozen-de-arroz-redonditas-dulces-50gr-p212273",
-      "is_outlier": 0
-    },
-    {
-      "id": 178,
-      "date": "2026-07-22",
-      "supermarket": "arete",
-      "product_key": "harina_trigo_1kg",
-      "product_name": "HARINA DE MAIZ  MORIXE 1KG",
-      "price": 21050.0,
-      "url": "https://www.arete.com.py/harina-de-maiz-morixe-1kg-p213288",
-      "is_outlier": 0
-    },
-    {
-      "id": 286,
+      "id": 379,
       "date": "2026-07-22",
       "supermarket": "arete",
       "product_key": "huevos_docena",
@@ -122,7 +82,7 @@
       "is_outlier": 0
     },
     {
-      "id": 298,
+      "id": 391,
       "date": "2026-07-22",
       "supermarket": "arete",
       "product_key": "jabon_tocador_unidad",
@@ -132,7 +92,7 @@
       "is_outlier": 0
     },
     {
-      "id": 301,
+      "id": 394,
       "date": "2026-07-22",
       "supermarket": "arete",
       "product_key": "lavandina_1l",
@@ -142,17 +102,7 @@
       "is_outlier": 0
     },
     {
-      "id": 174,
-      "date": "2026-07-22",
-      "supermarket": "arete",
-      "product_key": "leche_fluida_1l",
-      "product_name": "LECHE ENTERA EN POLVO TREBOL 1 KL",
-      "price": 53750.0,
-      "url": "https://www.arete.com.py/leche-entera-en-polvo-trebol-1-kl-p35108",
-      "is_outlier": 0
-    },
-    {
-      "id": 294,
+      "id": 387,
       "date": "2026-07-22",
       "supermarket": "arete",
       "product_key": "mandioca_1kg",
@@ -162,7 +112,7 @@
       "is_outlier": 0
     },
     {
-      "id": 293,
+      "id": 386,
       "date": "2026-07-22",
       "supermarket": "arete",
       "product_key": "naranja_1kg",
@@ -172,17 +122,7 @@
       "is_outlier": 0
     },
     {
-      "id": 170,
-      "date": "2026-07-22",
-      "supermarket": "arete",
-      "product_key": "pan_frances_1kg",
-      "product_name": "PAN FRANCESITO X KG",
-      "price": 7300.0,
-      "url": "https://www.arete.com.py/pan-francesito-x-kg-p185055",
-      "is_outlier": 0
-    },
-    {
-      "id": 289,
+      "id": 382,
       "date": "2026-07-22",
       "supermarket": "arete",
       "product_key": "papa_1kg",
@@ -192,17 +132,7 @@
       "is_outlier": 0
     },
     {
-      "id": 194,
-      "date": "2026-07-22",
-      "supermarket": "arete",
-      "product_key": "papel_higienico_4rollos",
-      "product_name": "PAPEL HIGIENICO FOFINHO ABSOLUTE X4 ROLLOS 60 MTS",
-      "price": 30050.0,
-      "url": "https://www.arete.com.py/papel-higienico-fofinho-absolute-x4-rollos-60-mts-p196056",
-      "is_outlier": 0
-    },
-    {
-      "id": 300,
+      "id": 393,
       "date": "2026-07-22",
       "supermarket": "arete",
       "product_key": "pasta_dental_90g",
@@ -212,27 +142,7 @@
       "is_outlier": 0
     },
     {
-      "id": 172,
-      "date": "2026-07-22",
-      "supermarket": "arete",
-      "product_key": "pollo_entero_1kg",
-      "product_name": "MUSLO ENTERO PECHUGON CONG. X KG",
-      "price": 19500.0,
-      "url": "https://www.arete.com.py/muslo-entero-pechugon-cong-x-kg-p131593",
-      "is_outlier": 0
-    },
-    {
-      "id": 187,
-      "date": "2026-07-22",
-      "supermarket": "arete",
-      "product_key": "porotos_500g",
-      "product_name": "POROTO PYTA SELECTA 500GR",
-      "price": 24800.0,
-      "url": "https://www.arete.com.py/poroto-pyta-selecta-500gr-p108542",
-      "is_outlier": 0
-    },
-    {
-      "id": 295,
+      "id": 388,
       "date": "2026-07-22",
       "supermarket": "arete",
       "product_key": "queso_paraguay_1kg",
@@ -242,7 +152,7 @@
       "is_outlier": 0
     },
     {
-      "id": 296,
+      "id": 389,
       "date": "2026-07-22",
       "supermarket": "arete",
       "product_key": "sal_fina_1kg",
@@ -252,7 +162,7 @@
       "is_outlier": 0
     },
     {
-      "id": 290,
+      "id": 383,
       "date": "2026-07-22",
       "supermarket": "arete",
       "product_key": "tomate_1kg",
@@ -262,7 +172,7 @@
       "is_outlier": 0
     },
     {
-      "id": 285,
+      "id": 378,
       "date": "2026-07-22",
       "supermarket": "arete",
       "product_key": "yerba_mate_1kg",
@@ -272,17 +182,7 @@
       "is_outlier": 0
     },
     {
-      "id": 191,
-      "date": "2026-07-22",
-      "supermarket": "arete",
-      "product_key": "yogur_bebible_1l",
-      "product_name": "TREBOL YOGURT BEBIBLE SACHET Sab BANANA 1/2 LITRO.",
-      "price": 4850.0,
-      "url": "https://www.arete.com.py/trebol-yogurt-bebible-sachet-sab-banana-1-2-litro-p186218",
-      "is_outlier": 0
-    },
-    {
-      "id": 269,
+      "id": 362,
       "date": "2026-07-22",
       "supermarket": "biggie",
       "product_key": "aceite_girasol_900ml",
@@ -292,17 +192,7 @@
       "is_outlier": 0
     },
     {
-      "id": 141,
-      "date": "2026-07-22",
-      "supermarket": "biggie",
-      "product_key": "arroz_1kg",
-      "product_name": "Arroz Primicia Parborizado Tipo I de 1.000 gr.",
-      "price": 8450.0,
-      "url": "https://www.biggie.com.py/search?q=arroz 1kg",
-      "is_outlier": 0
-    },
-    {
-      "id": 270,
+      "id": 363,
       "date": "2026-07-22",
       "supermarket": "biggie",
       "product_key": "azucar_1kg",
@@ -312,7 +202,7 @@
       "is_outlier": 0
     },
     {
-      "id": 275,
+      "id": 368,
       "date": "2026-07-22",
       "supermarket": "biggie",
       "product_key": "banana_1kg",
@@ -322,7 +212,7 @@
       "is_outlier": 0
     },
     {
-      "id": 280,
+      "id": 373,
       "date": "2026-07-22",
       "supermarket": "biggie",
       "product_key": "cafe_molido_500g",
@@ -332,17 +222,7 @@
       "is_outlier": 0
     },
     {
-      "id": 143,
-      "date": "2026-07-22",
-      "supermarket": "biggie",
-      "product_key": "carne_vacuna_nalga_1kg",
-      "product_name": "Carne Vacio Biggie x kg.",
-      "price": 57450.0,
-      "url": "https://www.biggie.com.py/search?q=carne nalga 1kg",
-      "is_outlier": 0
-    },
-    {
-      "id": 274,
+      "id": 367,
       "date": "2026-07-22",
       "supermarket": "biggie",
       "product_key": "cebolla_1kg",
@@ -352,37 +232,7 @@
       "is_outlier": 0
     },
     {
-      "id": 165,
-      "date": "2026-07-22",
-      "supermarket": "biggie",
-      "product_key": "detergente_lavavajilla_750ml",
-      "product_name": "Detergente Activo 100 limon de 750 ml.",
-      "price": 9100.0,
-      "url": "https://www.biggie.com.py/search?q=detergente lavavajilla 750ml",
-      "is_outlier": 0
-    },
-    {
-      "id": 151,
-      "date": "2026-07-22",
-      "supermarket": "biggie",
-      "product_key": "fideos_500g",
-      "product_name": "Fideos Nissin Cup Noodles Pollo de 71 gr.",
-      "price": 12900.0,
-      "url": "https://www.biggie.com.py/search?q=fideos 500g",
-      "is_outlier": 0
-    },
-    {
-      "id": 162,
-      "date": "2026-07-22",
-      "supermarket": "biggie",
-      "product_key": "galletitas_dulces_paquete",
-      "product_name": "Galletitas Bagley Surtidas de 400 gr.",
-      "price": 13550.0,
-      "url": "https://www.biggie.com.py/search?q=galletitas dulces",
-      "is_outlier": 0
-    },
-    {
-      "id": 271,
+      "id": 364,
       "date": "2026-07-22",
       "supermarket": "biggie",
       "product_key": "harina_trigo_1kg",
@@ -392,7 +242,7 @@
       "is_outlier": 0
     },
     {
-      "id": 268,
+      "id": 361,
       "date": "2026-07-22",
       "supermarket": "biggie",
       "product_key": "huevos_docena",
@@ -402,7 +252,7 @@
       "is_outlier": 0
     },
     {
-      "id": 281,
+      "id": 374,
       "date": "2026-07-22",
       "supermarket": "biggie",
       "product_key": "jabon_tocador_unidad",
@@ -412,7 +262,7 @@
       "is_outlier": 0
     },
     {
-      "id": 283,
+      "id": 376,
       "date": "2026-07-22",
       "supermarket": "biggie",
       "product_key": "lavandina_1l",
@@ -422,17 +272,7 @@
       "is_outlier": 0
     },
     {
-      "id": 146,
-      "date": "2026-07-22",
-      "supermarket": "biggie",
-      "product_key": "leche_fluida_1l",
-      "product_name": "Leche Parmalat Ultra Sachet de 1.000 ml.",
-      "price": 8050.0,
-      "url": "https://www.biggie.com.py/search?q=leche entera 1 litro",
-      "is_outlier": 0
-    },
-    {
-      "id": 277,
+      "id": 370,
       "date": "2026-07-22",
       "supermarket": "biggie",
       "product_key": "mandioca_1kg",
@@ -442,7 +282,7 @@
       "is_outlier": 0
     },
     {
-      "id": 276,
+      "id": 369,
       "date": "2026-07-22",
       "supermarket": "biggie",
       "product_key": "naranja_1kg",
@@ -452,17 +292,7 @@
       "is_outlier": 0
     },
     {
-      "id": 142,
-      "date": "2026-07-22",
-      "supermarket": "biggie",
-      "product_key": "pan_frances_1kg",
-      "product_name": "Pan Baguette Pagnifique x Uni",
-      "price": 9700.0,
-      "url": "https://www.biggie.com.py/search?q=pan frances 1kg",
-      "is_outlier": 0
-    },
-    {
-      "id": 272,
+      "id": 365,
       "date": "2026-07-22",
       "supermarket": "biggie",
       "product_key": "papa_1kg",
@@ -472,17 +302,7 @@
       "is_outlier": 0
     },
     {
-      "id": 166,
-      "date": "2026-07-22",
-      "supermarket": "biggie",
-      "product_key": "papel_higienico_4rollos",
-      "product_name": "Papel Higienico Personal Neutro Vip Doble Hoja de 4 rollos.",
-      "price": 19750.0,
-      "url": "https://www.biggie.com.py/search?q=papel higienico 4 rollos",
-      "is_outlier": 0
-    },
-    {
-      "id": 282,
+      "id": 375,
       "date": "2026-07-22",
       "supermarket": "biggie",
       "product_key": "pasta_dental_90g",
@@ -492,7 +312,7 @@
       "is_outlier": 0
     },
     {
-      "id": 266,
+      "id": 359,
       "date": "2026-07-22",
       "supermarket": "biggie",
       "product_key": "pollo_entero_1kg",
@@ -502,17 +322,7 @@
       "is_outlier": 0
     },
     {
-      "id": 159,
-      "date": "2026-07-22",
-      "supermarket": "biggie",
-      "product_key": "porotos_500g",
-      "product_name": "Poroto Colorado Primicia de 500 gr.",
-      "price": 18150.0,
-      "url": "https://www.biggie.com.py/search?q=porotos 500g",
-      "is_outlier": 0
-    },
-    {
-      "id": 278,
+      "id": 371,
       "date": "2026-07-22",
       "supermarket": "biggie",
       "product_key": "queso_paraguay_1kg",
@@ -522,7 +332,7 @@
       "is_outlier": 0
     },
     {
-      "id": 279,
+      "id": 372,
       "date": "2026-07-22",
       "supermarket": "biggie",
       "product_key": "sal_fina_1kg",
@@ -532,7 +342,7 @@
       "is_outlier": 0
     },
     {
-      "id": 273,
+      "id": 366,
       "date": "2026-07-22",
       "supermarket": "biggie",
       "product_key": "tomate_1kg",
@@ -542,7 +352,7 @@
       "is_outlier": 0
     },
     {
-      "id": 267,
+      "id": 360,
       "date": "2026-07-22",
       "supermarket": "biggie",
       "product_key": "yerba_mate_1kg",
@@ -552,17 +362,7 @@
       "is_outlier": 0
     },
     {
-      "id": 163,
-      "date": "2026-07-22",
-      "supermarket": "biggie",
-      "product_key": "yogur_bebible_1l",
-      "product_name": "Yogurt Bebible Sachet Vainilla Trebol de 1.000 ml.",
-      "price": 9900.0,
-      "url": "https://www.biggie.com.py/search?q=yogur bebible 1 litro",
-      "is_outlier": 0
-    },
-    {
-      "id": 243,
+      "id": 336,
       "date": "2026-07-22",
       "supermarket": "casa_rica",
       "product_key": "aceite_girasol_900ml",
@@ -572,17 +372,7 @@
       "is_outlier": 0
     },
     {
-      "id": 99,
-      "date": "2026-07-22",
-      "supermarket": "casa_rica",
-      "product_key": "arroz_1kg",
-      "product_name": "ARROZ CHINES PARBOLIZADO P/MICROONDAS 1KG",
-      "price": 21700.0,
-      "url": "https://www.casarica.com.py/arroz-chines-parbolizado-p-microondas-1kg-p26627",
-      "is_outlier": 0
-    },
-    {
-      "id": 244,
+      "id": 337,
       "date": "2026-07-22",
       "supermarket": "casa_rica",
       "product_key": "azucar_1kg",
@@ -592,17 +382,7 @@
       "is_outlier": 0
     },
     {
-      "id": 113,
-      "date": "2026-07-22",
-      "supermarket": "casa_rica",
-      "product_key": "banana_1kg",
-      "product_name": "ALIMENTO P/ PERRO MASTER DOG CACHORRO 1KG",
-      "price": 31650.0,
-      "url": "https://www.casarica.com.py/alimento-p-perro-master-dog-cachorro-1kg-p34091",
-      "is_outlier": 0
-    },
-    {
-      "id": 249,
+      "id": 342,
       "date": "2026-07-22",
       "supermarket": "casa_rica",
       "product_key": "cafe_molido_500g",
@@ -612,27 +392,7 @@
       "is_outlier": 0
     },
     {
-      "id": 101,
-      "date": "2026-07-22",
-      "supermarket": "casa_rica",
-      "product_key": "carne_vacuna_nalga_1kg",
-      "product_name": "ABLANDADOR DE CARNE 300GR",
-      "price": 30400.0,
-      "url": "https://www.casarica.com.py/ablandador-de-carne-300gr-p2915",
-      "is_outlier": 0
-    },
-    {
-      "id": 112,
-      "date": "2026-07-22",
-      "supermarket": "casa_rica",
-      "product_key": "cebolla_1kg",
-      "product_name": "ALIMENTO P/ PERRO MASTER DOG CACHORRO 1KG",
-      "price": 31650.0,
-      "url": "https://www.casarica.com.py/alimento-p-perro-master-dog-cachorro-1kg-p34091",
-      "is_outlier": 0
-    },
-    {
-      "id": 252,
+      "id": 345,
       "date": "2026-07-22",
       "supermarket": "casa_rica",
       "product_key": "detergente_lavavajilla_750ml",
@@ -642,27 +402,7 @@
       "is_outlier": 0
     },
     {
-      "id": 109,
-      "date": "2026-07-22",
-      "supermarket": "casa_rica",
-      "product_key": "fideos_500g",
-      "product_name": "FIDEOS AGNESI FETTUCCINE 500G",
-      "price": 19900.0,
-      "url": "https://www.casarica.com.py/fideos-agnesi-fettuccine-500g-p40104",
-      "is_outlier": 0
-    },
-    {
-      "id": 120,
-      "date": "2026-07-22",
-      "supermarket": "casa_rica",
-      "product_key": "galletitas_dulces_paquete",
-      "product_name": "GALLETITAS DULCES CON CHIPS DE CHOCOLATE 150GR",
-      "price": 19900.0,
-      "url": "https://www.casarica.com.py/galletitas-dulces-con-chips-de-chocolate-150gr-p58876",
-      "is_outlier": 0
-    },
-    {
-      "id": 245,
+      "id": 338,
       "date": "2026-07-22",
       "supermarket": "casa_rica",
       "product_key": "harina_trigo_1kg",
@@ -672,7 +412,7 @@
       "is_outlier": 0
     },
     {
-      "id": 242,
+      "id": 335,
       "date": "2026-07-22",
       "supermarket": "casa_rica",
       "product_key": "huevos_docena",
@@ -682,7 +422,7 @@
       "is_outlier": 0
     },
     {
-      "id": 251,
+      "id": 344,
       "date": "2026-07-22",
       "supermarket": "casa_rica",
       "product_key": "jabon_tocador_unidad",
@@ -692,7 +432,7 @@
       "is_outlier": 0
     },
     {
-      "id": 254,
+      "id": 347,
       "date": "2026-07-22",
       "supermarket": "casa_rica",
       "product_key": "lavandina_1l",
@@ -702,17 +442,7 @@
       "is_outlier": 0
     },
     {
-      "id": 104,
-      "date": "2026-07-22",
-      "supermarket": "casa_rica",
-      "product_key": "leche_fluida_1l",
-      "product_name": "LECHE DOÑA ANGELA ENTERA SACHET 1LT",
-      "price": 5950.0,
-      "url": "https://www.casarica.com.py/leche-dona-angela-entera-sachet-1lt-p21102",
-      "is_outlier": 0
-    },
-    {
-      "id": 246,
+      "id": 339,
       "date": "2026-07-22",
       "supermarket": "casa_rica",
       "product_key": "mandioca_1kg",
@@ -722,17 +452,7 @@
       "is_outlier": 0
     },
     {
-      "id": 114,
-      "date": "2026-07-22",
-      "supermarket": "casa_rica",
-      "product_key": "naranja_1kg",
-      "product_name": "AGUA AQUARIUS SABORIZADA NARANJA 1.5 LT",
-      "price": 11900.0,
-      "url": "https://www.casarica.com.py/agua-aquarius-saborizada-naranja-15-lt-p21727",
-      "is_outlier": 0
-    },
-    {
-      "id": 239,
+      "id": 332,
       "date": "2026-07-22",
       "supermarket": "casa_rica",
       "product_key": "pan_frances_1kg",
@@ -742,27 +462,7 @@
       "is_outlier": 0
     },
     {
-      "id": 110,
-      "date": "2026-07-22",
-      "supermarket": "casa_rica",
-      "product_key": "papa_1kg",
-      "product_name": "ÑOQUIS QUIERO MAS DE PAPA 1KG",
-      "price": 16400.0,
-      "url": "https://www.casarica.com.py/noquis-quiero-mas-de-papa-1kg-p32281",
-      "is_outlier": 0
-    },
-    {
-      "id": 124,
-      "date": "2026-07-22",
-      "supermarket": "casa_rica",
-      "product_key": "papel_higienico_4rollos",
-      "product_name": "PAPEL HIGIENICO ELITE DOBLE HOJA 4 X 30MT PAGUE 3",
-      "price": 22900.0,
-      "url": "https://www.casarica.com.py/papel-higienico-elite-doble-hoja-4-x-30mt-pague-3-p15397",
-      "is_outlier": 0
-    },
-    {
-      "id": 253,
+      "id": 346,
       "date": "2026-07-22",
       "supermarket": "casa_rica",
       "product_key": "pasta_dental_90g",
@@ -772,7 +472,7 @@
       "is_outlier": 0
     },
     {
-      "id": 240,
+      "id": 333,
       "date": "2026-07-22",
       "supermarket": "casa_rica",
       "product_key": "pollo_entero_1kg",
@@ -782,17 +482,7 @@
       "is_outlier": 0
     },
     {
-      "id": 117,
-      "date": "2026-07-22",
-      "supermarket": "casa_rica",
-      "product_key": "porotos_500g",
-      "product_name": "ADEREZO HELLMANNS S/TACC DP VEGANA 500GR",
-      "price": 12750.0,
-      "url": "https://www.casarica.com.py/aderezo-hellmanns-s-tacc-dp-vegana-500gr-p35158",
-      "is_outlier": 0
-    },
-    {
-      "id": 247,
+      "id": 340,
       "date": "2026-07-22",
       "supermarket": "casa_rica",
       "product_key": "queso_paraguay_1kg",
@@ -802,7 +492,7 @@
       "is_outlier": 0
     },
     {
-      "id": 248,
+      "id": 341,
       "date": "2026-07-22",
       "supermarket": "casa_rica",
       "product_key": "sal_fina_1kg",
@@ -812,17 +502,7 @@
       "is_outlier": 0
     },
     {
-      "id": 111,
-      "date": "2026-07-22",
-      "supermarket": "casa_rica",
-      "product_key": "tomate_1kg",
-      "product_name": "ALIMENTO P/ PERRO MASTER DOG CACHORRO 1KG",
-      "price": 31650.0,
-      "url": "https://www.casarica.com.py/alimento-p-perro-master-dog-cachorro-1kg-p34091",
-      "is_outlier": 0
-    },
-    {
-      "id": 241,
+      "id": 334,
       "date": "2026-07-22",
       "supermarket": "casa_rica",
       "product_key": "yerba_mate_1kg",
@@ -832,7 +512,7 @@
       "is_outlier": 0
     },
     {
-      "id": 250,
+      "id": 343,
       "date": "2026-07-22",
       "supermarket": "casa_rica",
       "product_key": "yogur_bebible_1l",
@@ -849,16 +529,6 @@
       "product_name": "ACEITE DE GIRASOL COSTA DEL SOL X 900ML (12)",
       "price": 15500.0,
       "url": "https://grutteronline.casagrutter.com.py/producto/aceite-de-girasol-costa-del-sol-x-900ml-12/",
-      "is_outlier": 0
-    },
-    {
-      "id": 197,
-      "date": "2026-07-22",
-      "supermarket": "grutter",
-      "product_key": "arroz_1kg",
-      "product_name": "ARROZ PRIMICIA PARBOLIZADO 1 KG.",
-      "price": 8850.0,
-      "url": "https://grutteronline.casagrutter.com.py/producto/arroz-primicia-parbolizado-1-kg/",
       "is_outlier": 0
     },
     {
@@ -922,7 +592,7 @@
       "is_outlier": 0
     },
     {
-      "id": 311,
+      "id": 400,
       "date": "2026-07-22",
       "supermarket": "los_jardines",
       "product_key": "aceite_girasol_900ml",
@@ -932,7 +602,7 @@
       "is_outlier": 0
     },
     {
-      "id": 306,
+      "id": 395,
       "date": "2026-07-22",
       "supermarket": "los_jardines",
       "product_key": "arroz_1kg",
@@ -942,7 +612,7 @@
       "is_outlier": 0
     },
     {
-      "id": 312,
+      "id": 401,
       "date": "2026-07-22",
       "supermarket": "los_jardines",
       "product_key": "azucar_1kg",
@@ -952,7 +622,7 @@
       "is_outlier": 0
     },
     {
-      "id": 317,
+      "id": 406,
       "date": "2026-07-22",
       "supermarket": "los_jardines",
       "product_key": "banana_1kg",
@@ -962,7 +632,7 @@
       "is_outlier": 0
     },
     {
-      "id": 322,
+      "id": 411,
       "date": "2026-07-22",
       "supermarket": "los_jardines",
       "product_key": "cafe_molido_500g",
@@ -972,17 +642,7 @@
       "is_outlier": 0
     },
     {
-      "id": 207,
-      "date": "2026-07-22",
-      "supermarket": "los_jardines",
-      "product_key": "carne_vacuna_nalga_1kg",
-      "product_name": "CARNE CHICA DE CORDERO X KG",
-      "price": 59900.0,
-      "url": "https://www.losjardinesonline.com.py/carne-chica-de-cordero-x-kg-p28655",
-      "is_outlier": 0
-    },
-    {
-      "id": 316,
+      "id": 405,
       "date": "2026-07-22",
       "supermarket": "los_jardines",
       "product_key": "cebolla_1kg",
@@ -992,7 +652,7 @@
       "is_outlier": 0
     },
     {
-      "id": 325,
+      "id": 414,
       "date": "2026-07-22",
       "supermarket": "los_jardines",
       "product_key": "detergente_lavavajilla_750ml",
@@ -1002,27 +662,7 @@
       "is_outlier": 0
     },
     {
-      "id": 215,
-      "date": "2026-07-22",
-      "supermarket": "los_jardines",
-      "product_key": "fideos_500g",
-      "product_name": "FIDEO FETTUCCINE PASTEURIZADO QUIERO MAS 500G",
-      "price": 9900.0,
-      "url": "https://www.losjardinesonline.com.py/fideo-fettuccine-pasteurizado-quiero-mas-500g-p67145",
-      "is_outlier": 0
-    },
-    {
-      "id": 226,
-      "date": "2026-07-22",
-      "supermarket": "los_jardines",
-      "product_key": "galletitas_dulces_paquete",
-      "product_name": "GALLETITAS 9 DE ORO AGRIDULCES 100G",
-      "price": 3550.0,
-      "url": "https://www.losjardinesonline.com.py/galletitas-9-de-oro-agridulces-100g-p17963",
-      "is_outlier": 0
-    },
-    {
-      "id": 313,
+      "id": 402,
       "date": "2026-07-22",
       "supermarket": "los_jardines",
       "product_key": "harina_trigo_1kg",
@@ -1032,7 +672,7 @@
       "is_outlier": 0
     },
     {
-      "id": 310,
+      "id": 399,
       "date": "2026-07-22",
       "supermarket": "los_jardines",
       "product_key": "huevos_docena",
@@ -1042,7 +682,7 @@
       "is_outlier": 0
     },
     {
-      "id": 324,
+      "id": 413,
       "date": "2026-07-22",
       "supermarket": "los_jardines",
       "product_key": "jabon_tocador_unidad",
@@ -1052,7 +692,7 @@
       "is_outlier": 0
     },
     {
-      "id": 327,
+      "id": 416,
       "date": "2026-07-22",
       "supermarket": "los_jardines",
       "product_key": "lavandina_1l",
@@ -1062,17 +702,7 @@
       "is_outlier": 0
     },
     {
-      "id": 210,
-      "date": "2026-07-22",
-      "supermarket": "los_jardines",
-      "product_key": "leche_fluida_1l",
-      "product_name": "LECHE ENTERA LA FORTUNA ULTRA PASTEURIZADA 1LT",
-      "price": 6250.0,
-      "url": "https://www.losjardinesonline.com.py/leche-entera-la-fortuna-ultra-pasteurizada-1lt-p164745",
-      "is_outlier": 0
-    },
-    {
-      "id": 319,
+      "id": 408,
       "date": "2026-07-22",
       "supermarket": "los_jardines",
       "product_key": "mandioca_1kg",
@@ -1082,7 +712,7 @@
       "is_outlier": 0
     },
     {
-      "id": 318,
+      "id": 407,
       "date": "2026-07-22",
       "supermarket": "los_jardines",
       "product_key": "naranja_1kg",
@@ -1092,7 +722,7 @@
       "is_outlier": 0
     },
     {
-      "id": 307,
+      "id": 396,
       "date": "2026-07-22",
       "supermarket": "los_jardines",
       "product_key": "pan_frances_1kg",
@@ -1102,7 +732,7 @@
       "is_outlier": 0
     },
     {
-      "id": 314,
+      "id": 403,
       "date": "2026-07-22",
       "supermarket": "los_jardines",
       "product_key": "papa_1kg",
@@ -1112,17 +742,7 @@
       "is_outlier": 0
     },
     {
-      "id": 230,
-      "date": "2026-07-22",
-      "supermarket": "los_jardines",
-      "product_key": "papel_higienico_4rollos",
-      "product_name": "PAPEL HIGIENICO BOB NORMAL 60 MT 4 ROLLOS",
-      "price": 11150.0,
-      "url": "https://www.losjardinesonline.com.py/papel-higienico-bob-normal-60-mt-4-rollos-p35342",
-      "is_outlier": 0
-    },
-    {
-      "id": 326,
+      "id": 415,
       "date": "2026-07-22",
       "supermarket": "los_jardines",
       "product_key": "pasta_dental_90g",
@@ -1132,7 +752,7 @@
       "is_outlier": 0
     },
     {
-      "id": 308,
+      "id": 397,
       "date": "2026-07-22",
       "supermarket": "los_jardines",
       "product_key": "pollo_entero_1kg",
@@ -1142,17 +762,7 @@
       "is_outlier": 0
     },
     {
-      "id": 223,
-      "date": "2026-07-22",
-      "supermarket": "los_jardines",
-      "product_key": "porotos_500g",
-      "product_name": "POROTO COLORADO BERPA 500G",
-      "price": 13950.0,
-      "url": "https://www.losjardinesonline.com.py/poroto-colorado-berpa-500g-p168169",
-      "is_outlier": 0
-    },
-    {
-      "id": 320,
+      "id": 409,
       "date": "2026-07-22",
       "supermarket": "los_jardines",
       "product_key": "queso_paraguay_1kg",
@@ -1162,7 +772,7 @@
       "is_outlier": 0
     },
     {
-      "id": 321,
+      "id": 410,
       "date": "2026-07-22",
       "supermarket": "los_jardines",
       "product_key": "sal_fina_1kg",
@@ -1172,7 +782,7 @@
       "is_outlier": 0
     },
     {
-      "id": 315,
+      "id": 404,
       "date": "2026-07-22",
       "supermarket": "los_jardines",
       "product_key": "tomate_1kg",
@@ -1182,7 +792,7 @@
       "is_outlier": 0
     },
     {
-      "id": 309,
+      "id": 398,
       "date": "2026-07-22",
       "supermarket": "los_jardines",
       "product_key": "yerba_mate_1kg",
@@ -1192,7 +802,7 @@
       "is_outlier": 0
     },
     {
-      "id": 323,
+      "id": 412,
       "date": "2026-07-22",
       "supermarket": "los_jardines",
       "product_key": "yogur_bebible_1l",
@@ -1202,27 +812,7 @@
       "is_outlier": 0
     },
     {
-      "id": 233,
-      "date": "2026-07-22",
-      "supermarket": "real",
-      "product_key": "arroz_1kg",
-      "product_name": "Arroz Integral Tio Joao 1kg",
-      "price": 17500.0,
-      "url": "https://www.realonline.com.py/search?name=arroz%201kg",
-      "is_outlier": 0
-    },
-    {
-      "id": 236,
-      "date": "2026-07-22",
-      "supermarket": "real",
-      "product_key": "galletitas_dulces_paquete",
-      "product_name": "Galletitas dulces Pepitos mini 50 Gr",
-      "price": 3950.0,
-      "url": "https://www.realonline.com.py/search?name=galletitas%20dulces",
-      "is_outlier": 0
-    },
-    {
-      "id": 329,
+      "id": 418,
       "date": "2026-07-22",
       "supermarket": "real",
       "product_key": "harina_trigo_1kg",
@@ -1232,7 +822,7 @@
       "is_outlier": 0
     },
     {
-      "id": 330,
+      "id": 419,
       "date": "2026-07-22",
       "supermarket": "real",
       "product_key": "jabon_tocador_unidad",
@@ -1242,7 +832,7 @@
       "is_outlier": 0
     },
     {
-      "id": 331,
+      "id": 420,
       "date": "2026-07-22",
       "supermarket": "real",
       "product_key": "lavandina_1l",
@@ -1252,7 +842,7 @@
       "is_outlier": 0
     },
     {
-      "id": 328,
+      "id": 417,
       "date": "2026-07-22",
       "supermarket": "real",
       "product_key": "yerba_mate_1kg",
@@ -1262,7 +852,7 @@
       "is_outlier": 0
     },
     {
-      "id": 257,
+      "id": 350,
       "date": "2026-07-22",
       "supermarket": "salemma",
       "product_key": "aceite_girasol_900ml",
@@ -1272,7 +862,7 @@
       "is_outlier": 0
     },
     {
-      "id": 255,
+      "id": 348,
       "date": "2026-07-22",
       "supermarket": "salemma",
       "product_key": "arroz_1kg",
@@ -1282,7 +872,7 @@
       "is_outlier": 0
     },
     {
-      "id": 258,
+      "id": 351,
       "date": "2026-07-22",
       "supermarket": "salemma",
       "product_key": "azucar_1kg",
@@ -1292,7 +882,7 @@
       "is_outlier": 0
     },
     {
-      "id": 262,
+      "id": 355,
       "date": "2026-07-22",
       "supermarket": "salemma",
       "product_key": "cafe_molido_500g",
@@ -1302,27 +892,7 @@
       "is_outlier": 0
     },
     {
-      "id": 132,
-      "date": "2026-07-22",
-      "supermarket": "salemma",
-      "product_key": "fideos_500g",
-      "product_name": "FIDEOS GALO ESPAGUETI 8  X500GR",
-      "price": 5700.0,
-      "url": "https://www.salemmaonline.com.py/producto/fideos-espagueti-x-500-g",
-      "is_outlier": 0
-    },
-    {
-      "id": 137,
-      "date": "2026-07-22",
-      "supermarket": "salemma",
-      "product_key": "galletitas_dulces_paquete",
-      "product_name": "GALLETITA OREO ORIGINAL X 118 GRS",
-      "price": 7400.0,
-      "url": "https://www.salemmaonline.com.py/producto/galletita-regular-con-relleno-117g",
-      "is_outlier": 0
-    },
-    {
-      "id": 259,
+      "id": 352,
       "date": "2026-07-22",
       "supermarket": "salemma",
       "product_key": "harina_trigo_1kg",
@@ -1332,7 +902,7 @@
       "is_outlier": 0
     },
     {
-      "id": 263,
+      "id": 356,
       "date": "2026-07-22",
       "supermarket": "salemma",
       "product_key": "jabon_tocador_unidad",
@@ -1342,7 +912,7 @@
       "is_outlier": 0
     },
     {
-      "id": 265,
+      "id": 358,
       "date": "2026-07-22",
       "supermarket": "salemma",
       "product_key": "lavandina_1l",
@@ -1352,7 +922,7 @@
       "is_outlier": 0
     },
     {
-      "id": 260,
+      "id": 353,
       "date": "2026-07-22",
       "supermarket": "salemma",
       "product_key": "mandioca_1kg",
@@ -1362,17 +932,7 @@
       "is_outlier": 0
     },
     {
-      "id": 133,
-      "date": "2026-07-22",
-      "supermarket": "salemma",
-      "product_key": "papa_1kg",
-      "product_name": "ÑOQUIS DE PAPA EDWARD X 1KG",
-      "price": 16400.0,
-      "url": "https://www.salemmaonline.com.py/producto/noquis-x-1kl",
-      "is_outlier": 0
-    },
-    {
-      "id": 264,
+      "id": 357,
       "date": "2026-07-22",
       "supermarket": "salemma",
       "product_key": "pasta_dental_90g",
@@ -1382,7 +942,7 @@
       "is_outlier": 0
     },
     {
-      "id": 261,
+      "id": 354,
       "date": "2026-07-22",
       "supermarket": "salemma",
       "product_key": "sal_fina_1kg",
@@ -1392,7 +952,7 @@
       "is_outlier": 0
     },
     {
-      "id": 256,
+      "id": 349,
       "date": "2026-07-22",
       "supermarket": "salemma",
       "product_key": "yerba_mate_1kg",
