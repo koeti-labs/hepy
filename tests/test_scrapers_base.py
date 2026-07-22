@@ -1,4 +1,4 @@
-from scrapers.base import extract_jsonld_products, extract_ecommercepro_products, extract_nextjs_rsc_products, extract_woocommerce_products, Scraper, ProductMatch
+from scrapers.base import extract_jsonld_products, extract_ecommercepro_products, extract_nextjs_rsc_products, extract_woocommerce_products, extract_stock_products, Scraper, ProductMatch
 
 def test_extract_jsonld_products_from_fixture():
     with open("fixtures/jsonld_sample.html", encoding="utf-8") as f:
@@ -48,3 +48,12 @@ def test_extract_woocommerce_products_ignores_bulk_discount_price():
     assert products[0]["name"] == "GALLETA DE ARROZ NATURAL B-LIGHT 85GR (24)"
     assert products[0]["price"] == 9100.0  # primary price, not the 8.750 bulk-discount tier
     assert products[0]["url"] == "https://grutteronline.casagrutter.com.py/producto/galleta-de-arroz-natural-b-light-85gr-24/"
+
+def test_extract_stock_products_parses_gs_price_spans():
+    with open("fixtures/stock_search_arroz.html", encoding="utf-8") as f:
+        html = f.read()
+    products = extract_stock_products(html)
+    assert len(products) == 1
+    assert products[0]["name"] == "ARROZ CHINES INTEGRAL BOLSA 1KG"
+    assert products[0]["price"] == 21000.0
+    assert products[0]["url"] == "https://www.stock.com.py/products/10070-arroz-chines-integral-bsa-1kg.aspx"

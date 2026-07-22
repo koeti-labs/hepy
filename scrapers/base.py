@@ -151,6 +151,31 @@ def extract_woocommerce_products(html: str, base_url: str) -> list[dict]:
     return products
 
 
+def extract_stock_products(html: str) -> list[dict]:
+    """Parse product cards from Stock's custom ASP.NET WebForms storefront
+    (confirmed live: NOT nopCommerce despite the original planning guess —
+    just carries an old nopCommerce copyright comment; no Product JSON-LD).
+    Product URLs are absolute already, so no base_url join is needed.
+
+    Returns [{"name", "price", "url"}, ...]; cards with no parseable price
+    skipped.
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    products: list[dict] = []
+    for card in soup.select("div.product-item"):
+        link = card.select_one("h2.product-title a.product-title-link")
+        price_span = card.select_one("span.productPrice")
+        if not (link and price_span):
+            continue
+
+        price = parse_py_price(price_span.get_text())
+        if price is None:
+            continue
+
+        products.append({"name": link.get_text(strip=True), "price": price, "url": link.get("href", "")})
+    return products
+
+
 class Scraper:
     name: str = "base"
     base_url: str = ""
