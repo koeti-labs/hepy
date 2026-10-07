@@ -2854,6 +2854,31 @@
       "date": "2026-10-06",
       "supermarket": "salemma",
       "value": 100.0
+    },
+    {
+      "date": "2026-10-07",
+      "supermarket": "AGREGADO",
+      "value": 100.16685344573636
+    },
+    {
+      "date": "2026-10-07",
+      "supermarket": "biggie",
+      "value": 100.0
+    },
+    {
+      "date": "2026-10-07",
+      "supermarket": "los_jardines",
+      "value": 100.66741378294546
+    },
+    {
+      "date": "2026-10-07",
+      "supermarket": "real",
+      "value": 100.0
+    },
+    {
+      "date": "2026-10-07",
+      "supermarket": "salemma",
+      "value": 100.0
     }
   ]
 }
