@@ -3294,6 +3294,41 @@
       "date": "2026-10-19",
       "supermarket": "salemma",
       "value": 100.0
+    },
+    {
+      "date": "2026-10-20",
+      "supermarket": "AGREGADO",
+      "value": 96.95047384933747
+    },
+    {
+      "date": "2026-10-20",
+      "supermarket": "arete",
+      "value": 99.63746650063213
+    },
+    {
+      "date": "2026-10-20",
+      "supermarket": "biggie",
+      "value": 100.0
+    },
+    {
+      "date": "2026-10-20",
+      "supermarket": "casa_rica",
+      "value": 81.3979628124472
+    },
+    {
+      "date": "2026-10-20",
+      "supermarket": "los_jardines",
+      "value": 100.66741378294546
+    },
+    {
+      "date": "2026-10-20",
+      "supermarket": "real",
+      "value": 100.0
+    },
+    {
+      "date": "2026-10-20",
+      "supermarket": "salemma",
+      "value": 100.0
     }
   ]
 }
