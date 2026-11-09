@@ -1,9 +1,9 @@
 {
-  "date": "2026-11-08",
+  "date": "2026-11-09",
   "prices": [
     {
-      "id": 6569,
-      "date": "2026-11-08",
+      "id": 6618,
+      "date": "2026-11-09",
       "supermarket": "arete",
       "product_key": "aceite_girasol_900ml",
       "product_name": "ACEITE CAÑUELAS GIRASOL 900 ML",
@@ -12,8 +12,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6566,
-      "date": "2026-11-08",
+      "id": 6615,
+      "date": "2026-11-09",
       "supermarket": "arete",
       "product_key": "arroz_1kg",
       "product_name": "ARROZ GORRO BLANCO PARBOLIZADO 1KG",
@@ -22,8 +22,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6570,
-      "date": "2026-11-08",
+      "id": 6619,
+      "date": "2026-11-09",
       "supermarket": "arete",
       "product_key": "azucar_1kg",
       "product_name": "AZUCAR AZPA 1KG",
@@ -32,8 +32,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6573,
-      "date": "2026-11-08",
+      "id": 6622,
+      "date": "2026-11-09",
       "supermarket": "arete",
       "product_key": "cafe_molido_500g",
       "product_name": "CAFE DALLMAYR MOLIDO ETHIOPIA 500GR",
@@ -42,8 +42,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6568,
-      "date": "2026-11-08",
+      "id": 6617,
+      "date": "2026-11-09",
       "supermarket": "arete",
       "product_key": "huevos_docena",
       "product_name": "HUEVO YEMITA TIPO A MEDIANO ECONOMICO 12 UN",
@@ -52,8 +52,18 @@
       "is_outlier": 0
     },
     {
-      "id": 6572,
-      "date": "2026-11-08",
+      "id": 6624,
+      "date": "2026-11-09",
+      "supermarket": "arete",
+      "product_key": "jabon_tocador_unidad",
+      "product_name": "JABON DE TOCADOR PALMOLIVE FRAMBUESA Y MORA 125GR",
+      "price": 6700.0,
+      "url": "https://www.arete.com.py/jabon-de-tocador-palmolive-frambuesa-y-mora-125gr-p204274",
+      "is_outlier": 0
+    },
+    {
+      "id": 6621,
+      "date": "2026-11-09",
       "supermarket": "arete",
       "product_key": "mandioca_1kg",
       "product_name": "MANDIOCA AGRO LIBRE ENVASADA PELADA DE 1Kg.",
@@ -62,8 +72,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6571,
-      "date": "2026-11-08",
+      "id": 6620,
+      "date": "2026-11-09",
       "supermarket": "arete",
       "product_key": "papa_1kg",
       "product_name": "PAPAS MC CAIN GOLDEN LONG 1KG",
@@ -72,8 +82,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6567,
-      "date": "2026-11-08",
+      "id": 6616,
+      "date": "2026-11-09",
       "supermarket": "arete",
       "product_key": "yerba_mate_1kg",
       "product_name": "YERBA MATE TARAGUI C/PALO ROJA 1kg.",
@@ -82,8 +92,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6563,
-      "date": "2026-11-08",
+      "id": 6612,
+      "date": "2026-11-09",
       "supermarket": "biggie",
       "product_key": "aceite_girasol_900ml",
       "product_name": "Aceite de Girasol Natura de 900 ml.",
@@ -92,8 +102,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6564,
-      "date": "2026-11-08",
+      "id": 6613,
+      "date": "2026-11-09",
       "supermarket": "biggie",
       "product_key": "mandioca_1kg",
       "product_name": "Mandioca Pelada Congelada Yasy Kañy 1 Kg.",
@@ -102,8 +112,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6565,
-      "date": "2026-11-08",
+      "id": 6614,
+      "date": "2026-11-09",
       "supermarket": "biggie",
       "product_key": "sal_fina_1kg",
       "product_name": "Sal Fina Purasal Yodada de 1 kg.",
@@ -112,8 +122,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6553,
-      "date": "2026-11-08",
+      "id": 6602,
+      "date": "2026-11-09",
       "supermarket": "casa_rica",
       "product_key": "aceite_girasol_900ml",
       "product_name": "ACEITE CANUELAS GIRASOL 900ML",
@@ -122,8 +132,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6554,
-      "date": "2026-11-08",
+      "id": 6603,
+      "date": "2026-11-09",
       "supermarket": "casa_rica",
       "product_key": "azucar_1kg",
       "product_name": "AZUCAR BLANCA  ALCOTEC 1KG",
@@ -132,8 +142,18 @@
       "is_outlier": 0
     },
     {
-      "id": 6555,
-      "date": "2026-11-08",
+      "id": 6607,
+      "date": "2026-11-09",
+      "supermarket": "casa_rica",
+      "product_key": "cafe_molido_500g",
+      "product_name": "CAFE CABRALES TORRADO MOLIDO 500GR",
+      "price": 82800.0,
+      "url": "https://www.casarica.com.py/cafe-cabrales-torrado-molido-500gr-p16614",
+      "is_outlier": 0
+    },
+    {
+      "id": 6604,
+      "date": "2026-11-09",
       "supermarket": "casa_rica",
       "product_key": "harina_trigo_1kg",
       "product_name": "HARINA DE TRIGO MOLINI PIZZUTI P/ PIZZA TIPO 0 1KG",
@@ -142,8 +162,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6560,
-      "date": "2026-11-08",
+      "id": 6609,
+      "date": "2026-11-09",
       "supermarket": "casa_rica",
       "product_key": "jabon_tocador_unidad",
       "product_name": "JABON DE TOCADOR CAVALLARO COCO CLASICO 100GR.",
@@ -152,8 +172,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6562,
-      "date": "2026-11-08",
+      "id": 6611,
+      "date": "2026-11-09",
       "supermarket": "casa_rica",
       "product_key": "lavandina_1l",
       "product_name": "LAVANDINA AYUDIN ANTIPLASH 1LITRO",
@@ -162,8 +182,18 @@
       "is_outlier": 0
     },
     {
-      "id": 6561,
-      "date": "2026-11-08",
+      "id": 6605,
+      "date": "2026-11-09",
+      "supermarket": "casa_rica",
+      "product_key": "mandioca_1kg",
+      "product_name": "ALMIDON NATIVO CODIPSA MANDIOCA 1KG",
+      "price": 9300.0,
+      "url": "https://www.casarica.com.py/almidon-nativo-codipsa-mandioca-1kg-p49027",
+      "is_outlier": 0
+    },
+    {
+      "id": 6610,
+      "date": "2026-11-09",
       "supermarket": "casa_rica",
       "product_key": "pasta_dental_90g",
       "product_name": "PASTA DENTAL CLOSE UP MENTOL PARADISE 90GR.",
@@ -172,8 +202,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6557,
-      "date": "2026-11-08",
+      "id": 6606,
+      "date": "2026-11-09",
       "supermarket": "casa_rica",
       "product_key": "sal_fina_1kg",
       "product_name": "SAL FINA PRIMICIA YODADA 1KG",
@@ -182,8 +212,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6552,
-      "date": "2026-11-08",
+      "id": 6601,
+      "date": "2026-11-09",
       "supermarket": "casa_rica",
       "product_key": "yerba_mate_1kg",
       "product_name": "YERBA MATE TARAGUI 1KG",
@@ -192,8 +222,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6559,
-      "date": "2026-11-08",
+      "id": 6608,
+      "date": "2026-11-09",
       "supermarket": "casa_rica",
       "product_key": "yogur_bebible_1l",
       "product_name": "YOGUR BEBIBLE CO-OP SACHET COCO 1LT",
@@ -202,8 +232,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6580,
-      "date": "2026-11-08",
+      "id": 6629,
+      "date": "2026-11-09",
       "supermarket": "los_jardines",
       "product_key": "aceite_girasol_900ml",
       "product_name": "ACEITE DE GIRASOL PASSIONE 900ML",
@@ -212,8 +242,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6581,
-      "date": "2026-11-08",
+      "id": 6630,
+      "date": "2026-11-09",
       "supermarket": "los_jardines",
       "product_key": "azucar_1kg",
       "product_name": "AZUCAR AZUKITA ORGANICO 1KG",
@@ -222,8 +252,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6588,
-      "date": "2026-11-08",
+      "id": 6637,
+      "date": "2026-11-09",
       "supermarket": "los_jardines",
       "product_key": "detergente_lavavajilla_750ml",
       "product_name": "DETERGENTE LAVAVAJILLAS ZITRON FRESH 750 ML",
@@ -232,8 +262,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6582,
-      "date": "2026-11-08",
+      "id": 6631,
+      "date": "2026-11-09",
       "supermarket": "los_jardines",
       "product_key": "harina_trigo_1kg",
       "product_name": "HARINA DE TRIGO PASSIONE TIPO 000 - 1 KG",
@@ -242,8 +272,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6579,
-      "date": "2026-11-08",
+      "id": 6628,
+      "date": "2026-11-09",
       "supermarket": "los_jardines",
       "product_key": "huevos_docena",
       "product_name": "HUEVO NUTRIHUEVOS TIPO A CJA. 12UN",
@@ -252,8 +282,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6590,
-      "date": "2026-11-08",
+      "id": 6639,
+      "date": "2026-11-09",
       "supermarket": "los_jardines",
       "product_key": "lavandina_1l",
       "product_name": "LAVANDINA 6 % BASE BASE 1 LT",
@@ -262,8 +292,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6583,
-      "date": "2026-11-08",
+      "id": 6632,
+      "date": "2026-11-09",
       "supermarket": "los_jardines",
       "product_key": "mandioca_1kg",
       "product_name": "ALMIDON AMELIA DE MANDIOCA 1KG",
@@ -272,8 +302,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6589,
-      "date": "2026-11-08",
+      "id": 6638,
+      "date": "2026-11-09",
       "supermarket": "los_jardines",
       "product_key": "pasta_dental_90g",
       "product_name": "PASTA DENTAL PLUS FRESH ORIGINAL 90GR",
@@ -282,8 +312,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6584,
-      "date": "2026-11-08",
+      "id": 6633,
+      "date": "2026-11-09",
       "supermarket": "los_jardines",
       "product_key": "sal_fina_1kg",
       "product_name": "SAL FINA YODADA MICKEY 1KG",
@@ -292,8 +322,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6578,
-      "date": "2026-11-08",
+      "id": 6627,
+      "date": "2026-11-09",
       "supermarket": "los_jardines",
       "product_key": "yerba_mate_1kg",
       "product_name": "YERBA MATE CLASICA INDEGA 1KG",
@@ -302,8 +332,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6586,
-      "date": "2026-11-08",
+      "id": 6635,
+      "date": "2026-11-09",
       "supermarket": "los_jardines",
       "product_key": "yogur_bebible_1l",
       "product_name": "YOGUR BEBIBLE SACHET FRUTILLA 1LT CO-OP",
@@ -312,8 +342,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6592,
-      "date": "2026-11-08",
+      "id": 6641,
+      "date": "2026-11-09",
       "supermarket": "real",
       "product_key": "aceite_girasol_900ml",
       "product_name": "Aceite de girasol Natura 900 ML",
@@ -322,8 +352,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6599,
-      "date": "2026-11-08",
+      "id": 6648,
+      "date": "2026-11-09",
       "supermarket": "real",
       "product_key": "detergente_lavavajilla_750ml",
       "product_name": "Detergente Zitron fresh lavavajillas, 750 ml",
@@ -332,8 +362,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6593,
-      "date": "2026-11-08",
+      "id": 6642,
+      "date": "2026-11-09",
       "supermarket": "real",
       "product_key": "harina_trigo_1kg",
       "product_name": "Harina de trigo Oro KuÂ´i 0000 leudante, 1 kg",
@@ -342,8 +372,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6595,
-      "date": "2026-11-08",
+      "id": 6644,
+      "date": "2026-11-09",
       "supermarket": "real",
       "product_key": "mandioca_1kg",
       "product_name": "Mandioca Congelada Guarani 1 Kg. ",
@@ -352,8 +382,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6594,
-      "date": "2026-11-08",
+      "id": 6643,
+      "date": "2026-11-09",
       "supermarket": "real",
       "product_key": "papa_1kg",
       "product_name": "Ãoquis de papas Quiero Mas, 1 Kg",
@@ -362,8 +392,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6596,
-      "date": "2026-11-08",
+      "id": 6645,
+      "date": "2026-11-09",
       "supermarket": "real",
       "product_key": "sal_fina_1kg",
       "product_name": "Sal fina Primicia, 1 kg",
@@ -372,8 +402,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6591,
-      "date": "2026-11-08",
+      "id": 6640,
+      "date": "2026-11-09",
       "supermarket": "real",
       "product_key": "yerba_mate_1kg",
       "product_name": "Yerba mate Pajarito, 1kg",
@@ -382,8 +412,8 @@
       "is_outlier": 0
     },
     {
-      "id": 6597,
-      "date": "2026-11-08",
+      "id": 6646,
+      "date": "2026-11-09",
       "supermarket": "real",
       "product_key": "yogur_bebible_1l",
       "product_name": "Yogur bebible Grosella sachet Trebol, 1 lt",
