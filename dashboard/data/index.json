@@ -4244,6 +4244,31 @@
       "date": "2026-11-18",
       "supermarket": "los_jardines",
       "value": 100.66741378294546
+    },
+    {
+      "date": "2026-11-19",
+      "supermarket": "AGREGADO",
+      "value": 94.8625418580959
+    },
+    {
+      "date": "2026-11-19",
+      "supermarket": "arete",
+      "value": 98.21102370045699
+    },
+    {
+      "date": "2026-11-19",
+      "supermarket": "biggie",
+      "value": 100.0
+    },
+    {
+      "date": "2026-11-19",
+      "supermarket": "casa_rica",
+      "value": 80.57172994898113
+    },
+    {
+      "date": "2026-11-19",
+      "supermarket": "los_jardines",
+      "value": 100.66741378294546
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "prices": [
     {
-      "id": 7044,
-      "date": "2026-11-18",
+      "id": 7082,
+      "date": "2026-11-19",
       "supermarket": "arete",
       "product_key": "arroz_1kg",
       "product_name": "ARROZ GORRO BLANCO PARBOLIZADO 1KG",
@@ -12,8 +12,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7048,
-      "date": "2026-11-18",
+      "id": 7086,
+      "date": "2026-11-19",
       "supermarket": "arete",
       "product_key": "azucar_1kg",
       "product_name": "AZUCAR AZPA 1KG",
@@ -22,8 +22,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7051,
-      "date": "2026-11-18",
+      "id": 7089,
+      "date": "2026-11-19",
       "supermarket": "arete",
       "product_key": "cafe_molido_500g",
       "product_name": "CAFE DALLMAYR MOLIDO ETHIOPIA 500GR",
@@ -32,8 +32,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7046,
-      "date": "2026-11-18",
+      "id": 7084,
+      "date": "2026-11-19",
       "supermarket": "arete",
       "product_key": "huevos_docena",
       "product_name": "HUEVO YEMITA TIPO A MEDIANO ECONOMICO 12 UN",
@@ -42,18 +42,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7053,
-      "date": "2026-11-18",
-      "supermarket": "arete",
-      "product_key": "jabon_tocador_unidad",
-      "product_name": "JABON DE TOCADOR PALMOLIVE FRAMBUESA Y MORA 125GR",
-      "price": 6700.0,
-      "url": "https://www.arete.com.py/jabon-de-tocador-palmolive-frambuesa-y-mora-125gr-p204274",
-      "is_outlier": 0
-    },
-    {
-      "id": 7050,
-      "date": "2026-11-18",
+      "id": 7088,
+      "date": "2026-11-19",
       "supermarket": "arete",
       "product_key": "mandioca_1kg",
       "product_name": "MANDIOCA AGRO LIBRE ENVASADA PELADA DE 1Kg.",
@@ -62,8 +52,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7049,
-      "date": "2026-11-18",
+      "id": 7087,
+      "date": "2026-11-19",
       "supermarket": "arete",
       "product_key": "papa_1kg",
       "product_name": "PAPAS MC CAIN GOLDEN LONG 1KG",
@@ -72,8 +62,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7054,
-      "date": "2026-11-18",
+      "id": 7092,
+      "date": "2026-11-19",
       "supermarket": "arete",
       "product_key": "pasta_dental_90g",
       "product_name": "PACK ORAL-B PASTA DENTAL 3D WHITE 90G",
@@ -82,8 +72,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7045,
-      "date": "2026-11-18",
+      "id": 7083,
+      "date": "2026-11-19",
       "supermarket": "arete",
       "product_key": "yerba_mate_1kg",
       "product_name": "YERBA MATE TARAGUI C/PALO ROJA 1kg.",
@@ -92,8 +82,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7041,
-      "date": "2026-11-18",
+      "id": 7079,
+      "date": "2026-11-19",
       "supermarket": "biggie",
       "product_key": "aceite_girasol_900ml",
       "product_name": "Aceite de Girasol Natura de 900 ml.",
@@ -102,8 +92,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7042,
-      "date": "2026-11-18",
+      "id": 7080,
+      "date": "2026-11-19",
       "supermarket": "biggie",
       "product_key": "mandioca_1kg",
       "product_name": "Mandioca Pelada Congelada Yasy Kañy 1 Kg.",
@@ -112,8 +102,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7043,
-      "date": "2026-11-18",
+      "id": 7081,
+      "date": "2026-11-19",
       "supermarket": "biggie",
       "product_key": "sal_fina_1kg",
       "product_name": "Sal Fina Purasal Yodada de 1 kg.",
@@ -122,8 +112,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7032,
-      "date": "2026-11-18",
+      "id": 7070,
+      "date": "2026-11-19",
       "supermarket": "casa_rica",
       "product_key": "aceite_girasol_900ml",
       "product_name": "ACEITE CANUELAS GIRASOL 900ML",
@@ -132,8 +122,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7033,
-      "date": "2026-11-18",
+      "id": 7071,
+      "date": "2026-11-19",
       "supermarket": "casa_rica",
       "product_key": "azucar_1kg",
       "product_name": "AZUCAR BLANCA  ALCOTEC 1KG",
@@ -142,18 +132,18 @@
       "is_outlier": 0
     },
     {
-      "id": 7038,
-      "date": "2026-11-18",
+      "id": 7076,
+      "date": "2026-11-19",
       "supermarket": "casa_rica",
       "product_key": "jabon_tocador_unidad",
-      "product_name": "JABON DE TOCADOR C2 HUMEC  125G- LECHE DE ALMENDRA",
-      "price": 8400.0,
-      "url": "https://www.casarica.com.py/jabon-de-tocador-c2-humec-125g-leche-de-almendra-p41160",
+      "product_name": "JABON DE TOCADOR BERRIES COCO CAVALLARO 100GR",
+      "price": 6700.0,
+      "url": "https://www.casarica.com.py/jabon-de-tocador-berries-coco-cavallaro-100gr-p39015",
       "is_outlier": 0
     },
     {
-      "id": 7040,
-      "date": "2026-11-18",
+      "id": 7078,
+      "date": "2026-11-19",
       "supermarket": "casa_rica",
       "product_key": "lavandina_1l",
       "product_name": "LAVANDINA AYUDIN ANTIPLASH 1LITRO",
@@ -162,8 +152,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7034,
-      "date": "2026-11-18",
+      "id": 7072,
+      "date": "2026-11-19",
       "supermarket": "casa_rica",
       "product_key": "mandioca_1kg",
       "product_name": "ALMIDON NATIVO CODIPSA MANDIOCA 1KG",
@@ -172,8 +162,18 @@
       "is_outlier": 0
     },
     {
-      "id": 7035,
-      "date": "2026-11-18",
+      "id": 7077,
+      "date": "2026-11-19",
+      "supermarket": "casa_rica",
+      "product_key": "pasta_dental_90g",
+      "product_name": "PASTA DENTAL CLOSE UP MENTOL PARADISE 90GR.",
+      "price": 6700.0,
+      "url": "https://www.casarica.com.py/pasta-dental-close-up-mentol-paradise-90gr-p36454",
+      "is_outlier": 0
+    },
+    {
+      "id": 7073,
+      "date": "2026-11-19",
       "supermarket": "casa_rica",
       "product_key": "sal_fina_1kg",
       "product_name": "SAL FINA PRIMICIA YODADA 1KG",
@@ -182,8 +182,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7031,
-      "date": "2026-11-18",
+      "id": 7069,
+      "date": "2026-11-19",
       "supermarket": "casa_rica",
       "product_key": "yerba_mate_1kg",
       "product_name": "YERBA MATE TARAGUI 1KG",
@@ -192,8 +192,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7037,
-      "date": "2026-11-18",
+      "id": 7075,
+      "date": "2026-11-19",
       "supermarket": "casa_rica",
       "product_key": "yogur_bebible_1l",
       "product_name": "YOGUR BEBIBLE CO-OP SACHET COCO 1LT",
@@ -202,8 +202,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7058,
-      "date": "2026-11-18",
+      "id": 7096,
+      "date": "2026-11-19",
       "supermarket": "los_jardines",
       "product_key": "aceite_girasol_900ml",
       "product_name": "ACEITE DE GIRASOL PASSIONE 900ML",
@@ -212,8 +212,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7059,
-      "date": "2026-11-18",
+      "id": 7097,
+      "date": "2026-11-19",
       "supermarket": "los_jardines",
       "product_key": "azucar_1kg",
       "product_name": "AZUCAR AZUKITA ORGANICO 1KG",
@@ -222,8 +222,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7066,
-      "date": "2026-11-18",
+      "id": 7104,
+      "date": "2026-11-19",
       "supermarket": "los_jardines",
       "product_key": "detergente_lavavajilla_750ml",
       "product_name": "DETERGENTE LAVAVAJILLAS ZITRON FRESH 750 ML",
@@ -232,8 +232,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7060,
-      "date": "2026-11-18",
+      "id": 7098,
+      "date": "2026-11-19",
       "supermarket": "los_jardines",
       "product_key": "harina_trigo_1kg",
       "product_name": "HARINA DE TRIGO PASSIONE TIPO 000 - 1 KG",
@@ -242,18 +242,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7057,
-      "date": "2026-11-18",
-      "supermarket": "los_jardines",
-      "product_key": "huevos_docena",
-      "product_name": "HUEVO NUTRIHUEVOS TIPO A CJA. 12UN",
-      "price": 11500.0,
-      "url": "https://www.losjardinesonline.com.py/huevo-nutrihuevos-tipo-a-cja-12un-p67233",
-      "is_outlier": 0
-    },
-    {
-      "id": 7065,
-      "date": "2026-11-18",
+      "id": 7103,
+      "date": "2026-11-19",
       "supermarket": "los_jardines",
       "product_key": "jabon_tocador_unidad",
       "product_name": "JABON DE TOCADOR DOVE BLANCO 135 G",
@@ -262,8 +252,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7068,
-      "date": "2026-11-18",
+      "id": 7106,
+      "date": "2026-11-19",
       "supermarket": "los_jardines",
       "product_key": "lavandina_1l",
       "product_name": "LAVANDINA 6 % BASE BASE 1 LT",
@@ -272,8 +262,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7061,
-      "date": "2026-11-18",
+      "id": 7099,
+      "date": "2026-11-19",
       "supermarket": "los_jardines",
       "product_key": "mandioca_1kg",
       "product_name": "ALMIDON AMELIA DE MANDIOCA 1KG",
@@ -282,8 +272,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7067,
-      "date": "2026-11-18",
+      "id": 7105,
+      "date": "2026-11-19",
       "supermarket": "los_jardines",
       "product_key": "pasta_dental_90g",
       "product_name": "PASTA DENTAL PLUS FRESH ORIGINAL 90GR",
@@ -292,8 +282,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7062,
-      "date": "2026-11-18",
+      "id": 7100,
+      "date": "2026-11-19",
       "supermarket": "los_jardines",
       "product_key": "sal_fina_1kg",
       "product_name": "SAL FINA YODADA MICKEY 1KG",
@@ -302,23 +292,13 @@
       "is_outlier": 0
     },
     {
-      "id": 7056,
-      "date": "2026-11-18",
+      "id": 7094,
+      "date": "2026-11-19",
       "supermarket": "los_jardines",
       "product_key": "yerba_mate_1kg",
       "product_name": "YERBA MATE CLASICA INDEGA 1KG",
       "price": 18450.0,
       "url": "https://www.losjardinesonline.com.py/yerba-mate-clasica-indega-1kg-p18757",
-      "is_outlier": 0
-    },
-    {
-      "id": 7064,
-      "date": "2026-11-18",
-      "supermarket": "los_jardines",
-      "product_key": "yogur_bebible_1l",
-      "product_name": "YOGUR BEBIBLE SACHET FRUTILLA 1LT CO-OP",
-      "price": 10250.0,
-      "url": "https://www.losjardinesonline.com.py/yogur-bebible-sachet-frutilla-1lt-co-op-p187593",
       "is_outlier": 0
     }
   ]
