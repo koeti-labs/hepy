@@ -1,9 +1,9 @@
 {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "prices": [
     {
-      "id": 7350,
-      "date": "2026-11-26",
+      "id": 7388,
+      "date": "2026-11-27",
       "supermarket": "arete",
       "product_key": "arroz_1kg",
       "product_name": "ARROZ GORRO BLANCO PARBOLIZADO 1KG",
@@ -12,8 +12,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7354,
-      "date": "2026-11-26",
+      "id": 7392,
+      "date": "2026-11-27",
       "supermarket": "arete",
       "product_key": "azucar_1kg",
       "product_name": "AZUCAR AZPA 1KG",
@@ -22,8 +22,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7357,
-      "date": "2026-11-26",
+      "id": 7395,
+      "date": "2026-11-27",
       "supermarket": "arete",
       "product_key": "cafe_molido_500g",
       "product_name": "CAFE DALLMAYR MOLIDO ETHIOPIA 500GR",
@@ -32,8 +32,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7361,
-      "date": "2026-11-26",
+      "id": 7399,
+      "date": "2026-11-27",
       "supermarket": "arete",
       "product_key": "lavandina_1l",
       "product_name": "LAVANDINA PULOIL 1LITRO",
@@ -42,8 +42,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7356,
-      "date": "2026-11-26",
+      "id": 7394,
+      "date": "2026-11-27",
       "supermarket": "arete",
       "product_key": "mandioca_1kg",
       "product_name": "MANDIOCA AGRO LIBRE ENVASADA PELADA DE 1Kg.",
@@ -52,8 +52,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7355,
-      "date": "2026-11-26",
+      "id": 7393,
+      "date": "2026-11-27",
       "supermarket": "arete",
       "product_key": "papa_1kg",
       "product_name": "PAPAS MC CAIN GOLDEN LONG 1KG",
@@ -62,18 +62,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7360,
-      "date": "2026-11-26",
-      "supermarket": "arete",
-      "product_key": "pasta_dental_90g",
-      "product_name": "PACK ORAL-B PASTA DENTAL 3D WHITE 90G",
-      "price": 53950.0,
-      "url": "https://www.arete.com.py/pack-oral-b-pasta-dental-3d-white-90g-p209210",
-      "is_outlier": 0
-    },
-    {
-      "id": 7351,
-      "date": "2026-11-26",
+      "id": 7389,
+      "date": "2026-11-27",
       "supermarket": "arete",
       "product_key": "yerba_mate_1kg",
       "product_name": "YERBA MATE TARAGUI C/PALO ROJA 1kg.",
@@ -82,8 +72,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7358,
-      "date": "2026-11-26",
+      "id": 7396,
+      "date": "2026-11-27",
       "supermarket": "arete",
       "product_key": "yogur_bebible_1l",
       "product_name": "YOGUR ENTERO DOÑA ANGELA BEBIBLE BANANA SACHET 1L",
@@ -92,8 +82,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7347,
-      "date": "2026-11-26",
+      "id": 7385,
+      "date": "2026-11-27",
       "supermarket": "biggie",
       "product_key": "aceite_girasol_900ml",
       "product_name": "Aceite de Girasol Natura de 900 ml.",
@@ -102,8 +92,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7348,
-      "date": "2026-11-26",
+      "id": 7386,
+      "date": "2026-11-27",
       "supermarket": "biggie",
       "product_key": "mandioca_1kg",
       "product_name": "Mandioca Pelada Congelada Yasy Kañy 1 Kg.",
@@ -112,8 +102,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7338,
-      "date": "2026-11-26",
+      "id": 7376,
+      "date": "2026-11-27",
       "supermarket": "casa_rica",
       "product_key": "aceite_girasol_900ml",
       "product_name": "ACEITE CANUELAS GIRASOL 900ML",
@@ -122,8 +112,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7339,
-      "date": "2026-11-26",
+      "id": 7377,
+      "date": "2026-11-27",
       "supermarket": "casa_rica",
       "product_key": "azucar_1kg",
       "product_name": "AZUCAR BLANCA  ALCOTEC 1KG",
@@ -132,8 +122,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7346,
-      "date": "2026-11-26",
+      "id": 7384,
+      "date": "2026-11-27",
       "supermarket": "casa_rica",
       "product_key": "lavandina_1l",
       "product_name": "LAVANDINA AYUDIN ANTIPLASH 1LITRO",
@@ -142,8 +132,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7340,
-      "date": "2026-11-26",
+      "id": 7378,
+      "date": "2026-11-27",
       "supermarket": "casa_rica",
       "product_key": "mandioca_1kg",
       "product_name": "ALMIDON NATIVO CODIPSA MANDIOCA 1KG",
@@ -152,8 +142,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7345,
-      "date": "2026-11-26",
+      "id": 7383,
+      "date": "2026-11-27",
       "supermarket": "casa_rica",
       "product_key": "pasta_dental_90g",
       "product_name": "PASTA DENTAL CLOSE UP MENTOL PARADISE 90GR.",
@@ -162,8 +152,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7341,
-      "date": "2026-11-26",
+      "id": 7379,
+      "date": "2026-11-27",
       "supermarket": "casa_rica",
       "product_key": "sal_fina_1kg",
       "product_name": "SAL FINA PRIMICIA YODADA 1KG",
@@ -172,8 +162,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7337,
-      "date": "2026-11-26",
+      "id": 7375,
+      "date": "2026-11-27",
       "supermarket": "casa_rica",
       "product_key": "yerba_mate_1kg",
       "product_name": "YERBA MATE TARAGUI 1KG",
@@ -182,18 +172,18 @@
       "is_outlier": 0
     },
     {
-      "id": 7343,
-      "date": "2026-11-26",
+      "id": 7381,
+      "date": "2026-11-27",
       "supermarket": "casa_rica",
       "product_key": "yogur_bebible_1l",
-      "product_name": "YOGUR BEBIBLE CO-OP SACHET COCO 1LT",
-      "price": 8800.0,
-      "url": "https://www.casarica.com.py/yogur-bebible-co-op-sachet-coco-1lt-p39733",
+      "product_name": "YOGUR BEBIBLE TREBOL COCO SACHET 1L",
+      "price": 9200.0,
+      "url": "https://www.casarica.com.py/yogur-bebible-trebol-coco-sachet-1l-p20516",
       "is_outlier": 0
     },
     {
-      "id": 7364,
-      "date": "2026-11-26",
+      "id": 7402,
+      "date": "2026-11-27",
       "supermarket": "los_jardines",
       "product_key": "aceite_girasol_900ml",
       "product_name": "ACEITE DE GIRASOL PASSIONE 900ML",
@@ -202,8 +192,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7365,
-      "date": "2026-11-26",
+      "id": 7403,
+      "date": "2026-11-27",
       "supermarket": "los_jardines",
       "product_key": "azucar_1kg",
       "product_name": "AZUCAR AZUKITA ORGANICO 1KG",
@@ -212,8 +202,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7369,
-      "date": "2026-11-26",
+      "id": 7407,
+      "date": "2026-11-27",
       "supermarket": "los_jardines",
       "product_key": "cafe_molido_500g",
       "product_name": "CAFE DALLMAYR HOME BARISTA MOLIDO 500G",
@@ -222,8 +212,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7372,
-      "date": "2026-11-26",
+      "id": 7410,
+      "date": "2026-11-27",
       "supermarket": "los_jardines",
       "product_key": "detergente_lavavajilla_750ml",
       "product_name": "DETERGENTE LAVAVAJILLAS ZITRON FRESH 750 ML",
@@ -232,18 +222,18 @@
       "is_outlier": 0
     },
     {
-      "id": 7371,
-      "date": "2026-11-26",
+      "id": 7409,
+      "date": "2026-11-27",
       "supermarket": "los_jardines",
       "product_key": "jabon_tocador_unidad",
       "product_name": "JABON DE TOCADOR DOVE BLANCO 135 G",
-      "price": 12500.0,
+      "price": 10750.0,
       "url": "https://www.losjardinesonline.com.py/jabon-de-tocador-dove-blanco-135-g-p25679",
       "is_outlier": 0
     },
     {
-      "id": 7374,
-      "date": "2026-11-26",
+      "id": 7412,
+      "date": "2026-11-27",
       "supermarket": "los_jardines",
       "product_key": "lavandina_1l",
       "product_name": "LAVANDINA 6 % BASE BASE 1 LT",
@@ -252,8 +242,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7367,
-      "date": "2026-11-26",
+      "id": 7405,
+      "date": "2026-11-27",
       "supermarket": "los_jardines",
       "product_key": "mandioca_1kg",
       "product_name": "ALMIDON AMELIA DE MANDIOCA 1KG",
@@ -262,8 +252,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7373,
-      "date": "2026-11-26",
+      "id": 7411,
+      "date": "2026-11-27",
       "supermarket": "los_jardines",
       "product_key": "pasta_dental_90g",
       "product_name": "PASTA DENTAL PLUS FRESH ORIGINAL 90GR",
@@ -272,8 +262,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7368,
-      "date": "2026-11-26",
+      "id": 7406,
+      "date": "2026-11-27",
       "supermarket": "los_jardines",
       "product_key": "sal_fina_1kg",
       "product_name": "SAL FINA YODADA MICKEY 1KG",
@@ -282,8 +272,8 @@
       "is_outlier": 0
     },
     {
-      "id": 7370,
-      "date": "2026-11-26",
+      "id": 7408,
+      "date": "2026-11-27",
       "supermarket": "los_jardines",
       "product_key": "yogur_bebible_1l",
       "product_name": "YOGUR BEBIBLE SACHET FRUTILLA 1LT CO-OP",
